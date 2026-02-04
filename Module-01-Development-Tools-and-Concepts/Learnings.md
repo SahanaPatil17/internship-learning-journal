@@ -9,4 +9,8 @@
 - Understood the importance of teamwork and collaboration through projects.
 - Gained clarity on the effort required to become industry-ready.
 - Learned the purpose and significance of Linux-based environments.
-- Understood the setup and use-case of Windows Subsystem for Linux (WSL).
+
+## Problems
+
+- Couldn't install and set up WSL and Ubuntu because of constant virtual disk errors.
+

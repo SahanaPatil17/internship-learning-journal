@@ -20,4 +20,5 @@
 - Navigated basic command-line interfaces.
 - Understood initial environment setup workflows.
 
-> **Note:** This session focused on environment preparation; no programming tasks were performed.
+> **Note:** Understood how to do everything but couldn't install Ubuntu because of internal system issues.
+

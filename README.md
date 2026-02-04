@@ -99,7 +99,7 @@ You will work **independently** in your forked version.
 After forking, copy your repository link and run:
 
 ```bash
-git clone <your-forked-repo-link>
+git clone https://github.com/the-otner/internship-learning-journal-sample.git
 cd internship-learning-journal
 ```
 

@@ -70,3 +70,83 @@ Despite multiple attempts, WSL/Ubuntu could not be successfully installed due to
 
 ## Note
 Further hands-on practice with Git and Linux commands will be performed once the Linux environment is successfully configured or via an alternative system if required.
+
+# Week 1 Session 3
+
+## Objective
+To understand Linux file system navigation, command-line concepts, and set up terminal-based AI tools (`uv` and `llm`).
+
+---
+
+## Tasks Attempted
+
+### 1. WSL & Ubuntu Usage
+- Followed the session walkthrough explaining:
+  - Linux root directory
+  - Home directory structure
+  - Mounted Windows drives under `/mnt`
+- Understood how Linux files and Windows files coexist in WSL.
+
+⚠️ **Outcome:**  
+WSL/Ubuntu could not be successfully installed or stabilized on my system despite repeated attempts in earlier sessions. Due to this, hands-on execution of Linux commands could not be performed locally.
+
+---
+
+### 2. Linux Command Concepts (Conceptual)
+- Learned the purpose and usage of:
+  - `ls` (list files)
+  - `cd` (change directory)
+  - Absolute vs relative paths
+  - `.` and `..` directory references
+- Understood Linux directory hierarchy and navigation logic.
+
+---
+
+### 3. VS Code Terminal (Conceptual)
+- Observed how VS Code integrates:
+  - File Explorer
+  - Terminal
+  - WSL environment
+- Understood how terminal location maps to actual file paths.
+
+---
+
+### 4. UV Tool Installation
+- Observed installation process for `uv`:
+  - Installed via Linux/Mac terminal
+  - Placed in system `bin` directory
+- Learned how to verify installation using:
+  - `uv --version`
+
+---
+
+### 5. LLM Tool Setup
+- Learned how to install `llm` using:
+  - `uv tool install llm`
+- Understood that `llm` enables terminal interaction with AI models.
+
+---
+
+### 6. API Key Configuration (Conceptual)
+- Gemini API:
+  - Generated using Google AI Studio
+  - Configured via `llm key set gemini`
+- OpenAI / AI-Pipe:
+  - Token generated via IITM AI-Pipe portal
+  - Base URL added to shell configuration file (`.bashrc` / `.zshrc`)
+- Learned importance of environment variables and shell restart.
+
+---
+
+## Current Status
+- WSL / Ubuntu: ❌ Not working on system
+- Linux navigation concepts: ✅ Understood
+- UV & LLM workflow: ✅ Understood conceptually
+- API usage flow: ✅ Understood
+
+---
+
+## Note
+Hands-on execution will be completed once a working Linux environment is available, either via system fix or alternative setup.
+
+

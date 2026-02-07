@@ -149,4 +149,80 @@ WSL/Ubuntu could not be successfully installed or stabilized on my system despit
 ## Note
 Hands-on execution will be completed once a working Linux environment is available, either via system fix or alternative setup.
 
+# Week 1 - Session 4
+
+## Objective
+To understand and set up a modern development environment using VS Code, package managers, Python versioning, GitHub CLI, and command-line AI tools.
+
+---
+
+## Tasks Attempted
+
+### 1. VS Code & GitHub Setup (Conceptual)
+- Understood correct VS Code installation practices on macOS.
+- Learned how to link VS Code with GitHub account.
+- Understood activation and usage of GitHub Copilot via Education Pack.
+
+---
+
+### 2. Package Manager Usage (Conceptual)
+- Learned the purpose and advantages of Homebrew.
+- Understood dependency management and PATH configuration.
+- Compared macOS/Linux package managers with Windows workflows.
+
+---
+
+### 3. Python Version Management (Conceptual)
+- Learned why Python version pinning is important.
+- Understood usage of pyenv for:
+  - Global Python version
+  - Project-specific Python version
+- Observed how system Python differs from managed Python versions.
+
+---
+
+### 4. UV Project Initialization (Conceptual)
+- Observed how `uv init`:
+  - Creates project structure
+  - Initializes Git repository
+  - Manages virtual environments automatically
+- Learned how dependencies are added and removed using UV.
+
+---
+
+### 5. GitHub CLI Workflow (Conceptual)
+- Learned how to:
+  - Authenticate GitHub via terminal
+  - Create repositories using CLI
+  - Push local repositories without using the web interface
+- Understood importance of CLI workflows for automation.
+
+---
+
+### 6. LLM CLI Setup & Usage (Conceptual)
+- Learned installation of `llm` CLI tool.
+- Understood API key configuration for:
+  - OpenAI (via AI Pipe)
+  - Gemini (via plugin)
+- Observed usage of different models using CLI flags.
+
+---
+
+### 7. AI Automation Demo (Observed)
+- Observed audio transcription using LLM CLI.
+- Learned how multimodal inputs (audio/text) are handled.
+- Understood cost-efficient model selection strategies.
+
+---
+
+## Current Status
+- WSL / Linux environment: ❌ Not functional on system
+- macOS/Linux setup: ❌ Not applicable
+- Conceptual understanding of workflows: ✅ Strong
+
+---
+
+## Note
+Hands-on execution will be completed once a functional Linux environment (WSL or alternative) is available.
+
 

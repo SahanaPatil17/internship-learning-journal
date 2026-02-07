@@ -105,3 +105,56 @@
 - Practice Linux commands in a functional environment.
 - Use `llm` for experimentation once setup is complete.
 
+# Week 1 - Session 4
+
+## Technical Learnings
+- Understood how macOS and Linux environments align with course workflows.
+- Learned proper VS Code installation and configuration practices.
+- Gained clarity on the role of package managers in dependency handling.
+- Learned Python version control using pyenv.
+- Understood modern Python project management using UV.
+- Learned GitHub automation using GitHub CLI.
+- Learned how AI tools can be accessed and automated via CLI.
+
+---
+
+## Conceptual Insights
+- Linux-based workflows are foundational for automation and deployment.
+- CLI-first approaches scale better than GUI-only workflows.
+- Version pinning prevents dependency breakage.
+- Automation reduces manual errors in development pipelines.
+- AI tools are most powerful when integrated into automated systems.
+
+---
+
+## AI Tooling Learnings
+- LLM CLI enables terminal-based interaction with AI models.
+- API keys control access and usage limits.
+- Model choice impacts:
+  - Cost
+  - Speed
+  - Capability
+- Multimodal AI enables tasks like transcription and translation.
+
+---
+
+## Challenges Faced
+- Unable to perform hands-on setup due to unresolved WSL/Ubuntu issues.
+- Relied on observation and conceptual understanding for this session.
+
+---
+
+## Key Takeaways
+- Environment setup is critical for long-term productivity.
+- Automation is a core theme of modern development.
+- CLI tools form the backbone of scalable AI-driven systems.
+- Conceptual clarity is essential even when hands-on execution is blocked.
+
+---
+
+## Next Steps
+- Resolve WSL/Linux environment setup.
+- Reproduce Session 4 workflows locally.
+- Practice GitHub CLI and UV-based project creation.
+- Experiment with LLM CLI once environment is functional.
+

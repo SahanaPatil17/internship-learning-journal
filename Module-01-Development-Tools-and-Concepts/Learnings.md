@@ -158,3 +158,44 @@
 - Practice GitHub CLI and UV-based project creation.
 - Experiment with LLM CLI once environment is functional.
 
+# Week 1 - Session 5
+
+## Technical Learnings
+- Understood why Git is essential for version control and collaboration.
+- Learned difference between local and remote repositories.
+- Understood SSH-based authentication for GitHub.
+- Learned how SSH keys enable secure, passwordless access.
+- Gained clarity on Git commands used for daily workflows.
+- Learned how credential conflicts can cause Git errors.
+
+---
+
+## Conceptual Learnings
+- Git workflows are environment-specific (Windows vs WSL).
+- SSH authentication is more reliable than HTTPS for frequent usage.
+- Git history is built incrementally through commits.
+- Branching allows parallel development within the same repository.
+- AI tools enhance productivity but do not replace understanding.
+
+---
+
+## Challenges Faced
+- Unable to perform hands-on Git operations due to unresolved WSL issues.
+- Relied on observation and conceptual understanding for SSH setup.
+- Identified environment configuration as a key dependency.
+
+---
+
+## Key Takeaways
+- Proper GitHub authentication is critical before pushing code.
+- SSH setup is a one-time effort that simplifies future workflows.
+- Troubleshooting is an expected part of development.
+- Git and GitHub form the backbone of the entire course.
+
+---
+
+## Next Steps
+- Complete SSH-based GitHub setup on a functional Linux environment.
+- Practice full Git workflow independently.
+- Use GitHub Copilot responsibly for future assignments.
+

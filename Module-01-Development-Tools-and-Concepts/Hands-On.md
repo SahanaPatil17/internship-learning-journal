@@ -225,4 +225,72 @@ To understand and set up a modern development environment using VS Code, package
 ## Note
 Hands-on execution will be completed once a functional Linux environment (WSL or alternative) is available.
 
+# Week 1 Session 5
+
+## Objective
+To set up Git and GitHub connectivity using SSH and understand the complete Git workflow from local development to remote repositories.
+
+---
+
+## Tasks Attempted
+
+### 1. Git & GitHub Setup (Conceptual)
+- Understood Git installation requirements for Windows and WSL separately.
+- Learned how to verify Git installation using `git --version`.
+
+---
+
+### 2. Repository Creation (Observed)
+- Observed repository creation via GitHub web interface.
+- Understood repository structure under a GitHub username.
+- Learned that repositories can be created locally and pushed later.
+
+---
+
+### 3. SSH Authentication Setup (Observed)
+- Learned how to generate SSH key pairs.
+- Understood difference between public and private keys.
+- Observed how to add public SSH key to GitHub settings.
+
+---
+
+### 4. Cloning with SSH (Observed)
+- Observed cloning a GitHub repository using SSH.
+- Understood common SSH-related errors and their causes.
+- Learned importance of SSH agent for key management.
+
+---
+
+### 5. Git Workflow (Observed)
+- Observed adding files using `git add`.
+- Observed committing changes with descriptive commit messages.
+- Observed pushing changes to GitHub using `git push`.
+
+---
+
+### 6. Troubleshooting Git Issues (Observed)
+- Learned how cached credentials can cause permission errors.
+- Observed use of Windows Credential Manager for fixing conflicts.
+- Learned that VS Code reload may be required after authentication changes.
+
+---
+
+### 7. GitHub Copilot Demo (Observed)
+- Observed Copilot generating markdown and code files.
+- Learned how AI-generated content can be pushed to GitHub.
+- Understood importance of validating AI output before committing.
+
+---
+
+## Current Status
+- WSL / Linux environment: ❌ Not stable on system
+- SSH-based GitHub workflow: ✅ Understood conceptually
+- Git commands and flow: ✅ Understood
+- Copilot usage: ✅ Understood conceptually
+
+---
+
+## Note
+Hands-on execution will be completed once a stable Linux/WSL environment is available or via an alternative setup.
+
 

@@ -261,3 +261,153 @@ This allows only specified origins to access your API.
 - Secured secrets using environment variables
 - Shared local server using ngrok
 - Implemented CORS configuration
+
+# Week 2 – Session 3 
+
+## 1. Create GitHub Codespace
+
+Step 1:
+Go to GitHub → Create new repository
+
+Step 2:
+Click Code → Create Codespace
+
+Step 3:
+Wait for cloud environment to start
+
+---
+
+## 2. Configure Dev Container
+
+Create folder:
+
+.devcontainer/
+
+Create file:
+
+devcontainer.json
+
+Example:
+
+{
+  "name": "Python Dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "extensions": [
+    "ms-python.python"
+  ],
+  "postCreateCommand": "pip install -r requirements.txt"
+}
+
+---
+
+## 3. Create Dockerfile
+
+Inside .devcontainer/
+
+Dockerfile:
+
+FROM mcr.microsoft.com/devcontainers/python:3.10
+
+WORKDIR /app
+COPY . /app
+RUN pip install fastapi uvicorn
+
+---
+
+## 4. Deploy on Hugging Face Spaces
+
+Step 1:
+Go to huggingface.co
+
+Step 2:
+Create new Space
+
+Select:
+Docker
+CPU Basic
+Public
+
+Step 3:
+Clone repository
+
+git clone <space-url>
+
+Step 4:
+Create files:
+
+requirements.txt
+
+fastapi
+uvicorn
+
+app.py
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def home():
+    return {"message": "Hello World"}
+
+Dockerfile
+
+FROM python:3.10
+
+WORKDIR /app
+COPY . /app
+RUN pip install -r requirements.txt
+
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]
+
+Step 5:
+Push to Hugging Face
+
+git add .
+git commit -m "Initial deployment"
+git push
+
+App gets deployed automatically.
+
+---
+
+## 5. Create GitHub Action
+
+Create folder:
+
+.github/workflows/
+
+Create file:
+
+test.yml
+
+Example:
+
+name: Sample Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run command
+        run: echo "Hello from GitHub Actions"
+
+Push changes.
+
+Go to GitHub → Actions → Run Workflow.
+
+---
+
+## 6. Create Scheduled Workflow
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+
+This runs daily at 12 PM.

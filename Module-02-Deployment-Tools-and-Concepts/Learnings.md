@@ -124,3 +124,56 @@ This session strengthened my understanding of:
 ## Reflection
 
 This session strengthened my understanding of backend API development and deployment workflow. I learned practical implementation of building, testing, securing, and deploying APIs in a real-world environment.
+
+# Week 2 – Session 3 
+
+## Technical Learnings
+
+- Understood GitHub Codespaces
+- Learned Dev Containers concept
+- Understood Docker integration
+- Learned Hugging Face Spaces deployment
+- Understood Git LFS for large files
+- Implemented FastAPI deployment on Hugging Face
+- Learned GitHub Actions automation
+- Understood YAML workflow structure
+- Learned CI/CD basics
+- Understood cron scheduling
+
+---
+
+## Conceptual Understanding
+
+- Codespaces is for development
+- Hugging Face Spaces is for deployment
+- GitHub Actions is for automation
+- Devcontainer.json defines environment setup
+- Dockerfile defines container configuration
+- CI ensures code stability
+- CD automates deployment
+
+---
+
+## Real-World Relevance
+
+- Used in enterprise development
+- Supports team collaboration
+- Standardizes environment setup
+- Prevents dependency conflicts
+- Automates testing and deployment
+- Helps scale large projects
+
+---
+
+## Challenges Faced
+
+- Understanding Dev Container configuration
+- Differentiating Codespaces vs Actions
+- Understanding Git LFS usage
+- SSH vs Token authentication confusion
+
+---
+
+## Reflection
+
+This session improved my understanding of cloud-based development, containerized environments, automated workflows, and modern DevOps practices. I now understand how development, deployment, and automation integrate in real-world projects.

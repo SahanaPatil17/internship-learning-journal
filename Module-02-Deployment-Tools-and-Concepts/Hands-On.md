@@ -411,3 +411,151 @@ on:
     - cron: "0 12 * * *"
 
 This runs daily at 12 PM.
+
+# Week 2 – Session 4 
+
+## 1. Install Required Packages
+
+pip install fastapi uvicorn python-multipart pydantic python-dotenv
+
+---
+
+## 2. Create FastAPI Application
+
+Create `app.py`
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def home():
+    return {"message": "Server Running"}
+
+Run the server:
+
+uvicorn app:app --reload
+
+Open:
+
+http://127.0.0.1:8000  
+http://127.0.0.1:8000/docs
+
+---
+
+## 3. Add Path and Query Parameters
+
+@app.get("/items/{item_id}")
+def get_item(item_id: int):
+    return {"item_id": item_id}
+
+@app.get("/search")
+def search(q: str):
+    return {"query": q}
+
+Test in Swagger docs.
+
+---
+
+## 4. Add POST Endpoint with Validation
+
+from pydantic import BaseModel
+
+class User(BaseModel):
+    username: str
+    email: str
+    age: int
+
+@app.post("/users")
+def create_user(user: User):
+    return {"user": user}
+
+Test using Swagger UI.
+
+---
+
+## 5. Add File Upload
+
+from fastapi import UploadFile, File
+
+@app.post("/upload")
+async def upload(file: UploadFile = File(...)):
+    content = await file.read()
+    return {"filename": file.filename}
+
+Test using Swagger or curl.
+
+---
+
+## 6. Add Environment Variables
+
+Create `.env`
+
+SECRET_KEY=mysecret123
+
+Add `.env` to `.gitignore`
+
+.env
+
+Load in app:
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+SECRET = os.getenv("SECRET_KEY")
+
+---
+
+## 7. Create requirements.txt
+
+fastapi
+uvicorn
+python-multipart
+pydantic
+python-dotenv
+
+---
+
+## 8. Create Dockerfile
+
+FROM python:3.11
+WORKDIR /app
+COPY . /app
+RUN pip install -r requirements.txt
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]
+
+---
+
+## 9. Deploy to Hugging Face
+
+1. Create new Space
+2. Choose Docker
+3. Upload app.py, Dockerfile, requirements.txt
+4. Add SECRET_KEY in Settings
+5. Deploy
+
+---
+
+## 10. Create Simple Test Script
+
+Create `test.sh`
+
+curl http://localhost:8000/
+curl http://localhost:8000/items/1
+
+Run:
+
+bash test.sh
+
+---
+
+## Hands-On Summary
+
+- Built FastAPI backend
+- Implemented GET, POST, and file uploads
+- Used Pydantic validation
+- Secured secrets with .env
+- Created Dockerfile
+- Deployed to Hugging Face
+- Automated testing with curl

@@ -22,8 +22,8 @@ Course Link: https://tds.s-anand.net/#/
 
 | Module | Topics | Status |
 |--------|--------|--------|
-| Module 01 | Foundations (Linux, CLI, Git, GitHub, Tooling) | In Progress |
-| Module 02 | Tools & Implementation | Not Started |
+| Module 01 | Foundations (Linux, CLI, Git, GitHub, Tooling) | Completed |
+| Module 02 | FastAPI, Deployment, API Workflows | In Progress |
 | Module 03 | Project Work | Not Started |
 
 ---
@@ -41,6 +41,8 @@ Course Link: https://tds.s-anand.net/#/
 ---
 
 ## 🚀 Key Learnings So Far
+
+### 🔹 Week 1 Highlights
 - Computer boot process, BIOS/UEFI, and hypervisors  
 - Linux file system hierarchy and command-line navigation  
 - Differences between Linux and Windows environments  
@@ -53,11 +55,27 @@ Course Link: https://tds.s-anand.net/#/
 
 ---
 
-## ❓ Doubts / Topics to Revisit
-- Hands-on Linux command practice once environment setup is resolved  
-- Practical SSH-based GitHub workflow execution  
-- Using UV and LLM CLI in a functional Linux environment  
-- Deeper understanding of GitHub CLI (`gh`)  
+### 🔹 Week 2 Highlights
+- Introduction to FastAPI framework and backend API development  
+- Understanding request–response lifecycle in web applications  
+- Implementing GET and POST endpoints  
+- Using path parameters and query parameters  
+- Data validation using Pydantic models  
+- Automatic error handling and type enforcement  
+- Testing APIs using Swagger UI and curl  
+- Automating API testing using command-line tools  
+- Handling file uploads (single and multiple files)  
+- Managing environment variables using `.env` files  
+- Importance of secret key validation in production APIs  
+- Observing deployment constraints (Vercel timeout limitations)  
+- Understanding execution time limits in serverless environments  
+- Writing `requirements.txt` for dependency management  
+- Introduction to Docker and container-based deployment  
+- Writing basic Dockerfile for FastAPI applications  
+- Understanding containerized runtime environments  
+- Deploying applications using Hugging Face Spaces  
+- Adding and managing secrets in cloud deployments  
+- Understanding complete TDS project architecture and workflow  
 
 ---
 
@@ -66,7 +84,8 @@ Course Link: https://tds.s-anand.net/#/
 | Week | What I Learned |
 |------|----------------|
 | Week 1 | Linux & WSL concepts, CLI fundamentals, Git & GitHub setup, SSH authentication, repository workflows, AI tooling (conceptual understanding due to setup issues) |
-| Week 2 | |
+| Week 2 | FastAPI backend development, API validation, curl testing, environment variable management, Docker basics, cloud deployment (Vercel & Hugging Face), execution constraints, and complete TDS workflow architecture |
+
 
 ---
 

@@ -177,3 +177,49 @@ This session strengthened my understanding of backend API development and deploy
 ## Reflection
 
 This session improved my understanding of cloud-based development, containerized environments, automated workflows, and modern DevOps practices. I now understand how development, deployment, and automation integrate in real-world projects.
+
+**
+---
+
+# Week 2 – Session 4 
+
+---
+
+## Technical Learnings
+
+- Built a structured FastAPI backend
+- Implemented GET, POST, path, and query parameters
+- Used Pydantic for structured validation
+- Implemented single and multiple file uploads
+- Tested APIs using curl
+- Automated API testing using Bash scripts
+- Managed secrets securely using environment variables
+- Created Dockerfile for containerized deployment
+- Deployed application using Hugging Face Spaces
+
+---
+
+## Conceptual Understanding
+
+- APIs must return immediate HTTP 200 response
+- Secret keys ensure request authentication
+- Async improves server efficiency
+- Docker ensures consistency across environments
+- Automation reduces manual testing
+- Deployment is part of backend engineering workflow
+
+---
+
+## Challenges Faced
+
+- Understanding complete project workflow
+- Managing secret keys properly
+- Correct Docker port configuration
+- Handling file uploads correctly
+- Connecting local testing with cloud deployment
+
+---
+
+## Reflection
+
+This session connected backend API development, validation, testing, automation, and deployment into one structured workflow. It improved my understanding of real-world backend system design and deployment practices.

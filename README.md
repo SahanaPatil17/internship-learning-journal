@@ -2,8 +2,8 @@
 **Name:** Sahana Patil  
 **USN:** 2BL22CI037  
 **GitHub Username:** SahanaPatil17  
-**Department:** CSE-AIML  
-**Internship Start Date:** 03-02-2026  
+**Department:** CSE(AI&ML)  
+**Internship Start Date:** 02-02-2026  
 
 ---
 
@@ -23,7 +23,7 @@ Course Link: https://tds.s-anand.net/#/
 | Module | Topics | Status |
 |--------|--------|--------|
 | Module 01 | Foundations (Linux, CLI, Git, GitHub, Tooling) | Completed |
-| Module 02 | FastAPI, Deployment, API Workflows | In Progress |
+| Module 02 | FastAPI, Deployment, API Workflows | Completed|
 | Module 03 | Project Work | Not Started |
 
 ---

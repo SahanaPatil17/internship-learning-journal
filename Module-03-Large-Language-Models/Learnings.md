@@ -90,3 +90,100 @@ to
 "Designing scalable AI systems".
 
 I now understand how to architect intelligent, production-ready AI applications.
+
+# Session 2
+
+---
+
+## Practical Understanding of Embeddings
+
+I understood how embeddings are actually generated using APIs and how they represent semantic meaning numerically.
+
+I learned how cosine similarity works mathematically using:
+- Dot product
+- Norm
+- Vector normalization
+
+---
+
+## Implementing Similarity Search
+
+I learned how to:
+- Compare two sentences using embeddings.
+- Compare text and image embeddings.
+- Interpret similarity scores.
+
+This clarified how semantic search works internally.
+
+---
+
+## API & Environment Handling
+
+I understood:
+- How to export environment variables.
+- How .bashrc makes variables persistent.
+- How incorrect endpoints cause API errors.
+- Importance of correct proxy URLs.
+
+---
+
+## Multimodal Understanding
+
+I learned how text and images can share the same embedding space.
+
+This helped me understand:
+- Cross-modal retrieval
+- How image search engines work
+- How Project 1 may require multimodal processing
+
+---
+
+## Real RAG Implementation
+
+This session helped me clearly understand:
+
+- Why chunking is required.
+- Why embeddings must be stored.
+- Why we sort by similarity.
+- Why we only retrieve Top-K results.
+
+I now understand the retrieval step of RAG clearly.
+
+---
+
+## Cost & Efficiency Awareness
+
+Major takeaway:
+
+- Never recompute embeddings repeatedly.
+- Compute once, reuse multiple times.
+- Reduce API cost.
+- Optimize performance.
+
+This session helped me think like a system designer, not just a coder.
+
+---
+
+## Debugging & Error Handling
+
+I observed and understood:
+
+- 404 errors due to wrong endpoint.
+- JSON serialization issues.
+- Timeout problems.
+- Async vs sync behavior.
+- Token expiration issues.
+
+This improved my debugging confidence.
+
+---
+
+## Overall Outcome
+
+This session significantly improved my practical understanding of:
+
+- Embedding pipelines
+- Similarity search
+- RAG architecture
+- Cost optimization
+- Real-world AI system workflows

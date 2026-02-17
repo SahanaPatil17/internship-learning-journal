@@ -187,3 +187,104 @@ This session significantly improved my practical understanding of:
 - RAG architecture
 - Cost optimization
 - Real-world AI system workflows
+
+# Session 2 
+
+This session involved experimentation with embeddings and retrieval-based questioning.
+
+---
+
+## Experiment 1 – Semantic Similarity
+
+Compared:
+
+- "apple" & "orange"
+- "apple" & "lightning"
+
+Observation:
+- Similar objects had higher cosine similarity.
+- Unrelated words had lower similarity.
+
+Learning:
+Embeddings capture semantic meaning, not just keywords.
+
+---
+
+## Experiment 2 – Multimodal Matching
+
+Compared:
+
+- Image of cat ↔ Text "cat"
+- Image of cat ↔ Text "box"
+
+Observation:
+- Correct cross-modal similarity detected.
+- Low similarity for unrelated objects.
+
+Learning:
+Multimodal embeddings enable cross-modal understanding.
+
+---
+
+## Experiment 3 – Chunk-Based Retrieval
+
+Question:
+"What is the purpose of TypeScript?"
+
+Process:
+- Generate embedding for question.
+- Compare with stored chunk embeddings.
+- Sort by similarity.
+- Retrieve Top-5.
+
+Observation:
+- Correct documentation file ranked highest.
+- Retrieval accurately identified relevant section.
+
+Learning:
+Similarity sorting is essential for RAG.
+
+---
+
+## Experiment 4 – Boolean Operator Question
+
+Question:
+"Which operator converts a value into explicit boolean?"
+
+Observation:
+- Correct document retrieved.
+- Relevant markdown section identified.
+
+Learning:
+RAG can pinpoint exact documentation sections.
+
+---
+
+## Experiment 5 – Cost Optimization
+
+Initial mistake:
+- Recomputing embeddings repeatedly.
+
+Improvement:
+- Store embeddings once.
+- Reuse stored vectors.
+- Compute question embedding only once.
+
+Learning:
+Efficiency matters in production systems.
+
+---
+
+## Overall Prompt & Retrieval Insights
+
+- Retrieval quality depends on embeddings.
+- Chunk size affects accuracy.
+- Sorting ensures relevance.
+- Structured storage enables scalable systems.
+- Proper API usage avoids unnecessary cost.
+
+---
+
+## Conclusion
+
+This session strengthened my understanding of building a working retrieval pipeline using embeddings, chunking, similarity search, and efficient API usage — forming the foundation for a production-ready RAG system.

@@ -244,3 +244,158 @@ Use YAML-based testing and assertions.
 Module 3 shifts focus from:
 
 Basic API calls → Intelligent, production-ready AI systems.
+
+# Session 2
+
+---
+
+## Embeddings
+
+Embeddings are numerical vector representations of text (or other data).
+
+- Generated using models like:
+  - text-embedding-3-small (OpenAI)
+  - Sentence Transformers
+- Used for:
+  - Similarity search
+  - Semantic matching
+  - Retrieval systems
+- Lower cost compared to chat models.
+
+Similarity between vectors is calculated using:
+- Cosine similarity
+- Dot product
+- Vector normalization (norm)
+
+---
+
+## Cosine Similarity
+
+Used to measure semantic similarity between two embeddings.
+
+Formula:
+Similarity = (A · B) / (||A|| × ||B||)
+
+- Value ranges from 0 to 1 (after normalization)
+- Higher value = more similar
+
+Example:
+"apple" & "orange" → high similarity  
+"apple" & "lightning" → low similarity  
+
+---
+
+## Environment Variables & API Usage
+
+- API keys stored using environment variables.
+- Can export using:
+  - export KEY=value
+  - .bashrc for persistence
+- HTTPX used to send API requests.
+- AI Pipe proxy endpoint used instead of direct OpenAI endpoint.
+
+---
+
+## Multimodal Embeddings
+
+Multimodal models map:
+
+- Text
+- Images
+
+into the same vector space.
+
+This allows:
+- Comparing image with text
+- Cross-modal similarity search
+
+Example:
+Image of a cat ↔ Text "cute cat" → high similarity  
+Image of cat ↔ Text "box" → low similarity  
+
+Used Nomic AI API for generating multimodal embeddings.
+
+---
+
+## Vector Databases
+
+Embeddings must be stored for large-scale retrieval.
+
+Instead of recalculating embeddings repeatedly:
+- Store them once
+- Reuse for similarity comparison
+
+Structure stored:
+- ID (source file)
+- Text content
+- Embedding vector
+
+---
+
+## Chunking
+
+Large documents cannot be sent fully due to token limits.
+
+Solution:
+- Split documents into chunks (e.g., 496 tokens each)
+- Store embeddings per chunk
+
+Why important:
+- Avoid token overflow
+- Improve retrieval accuracy
+- Reduce API cost
+
+---
+
+## Building a Basic RAG Pipeline
+
+Steps implemented:
+
+1. Clone documentation (TypeScript docs)
+2. Chunk markdown files
+3. Generate embeddings for each chunk
+4. Store in JSON collection
+5. Compute similarity between question and stored embeddings
+6. Sort by similarity
+7. Retrieve Top-5 relevant chunks
+
+Only top relevant chunks are used for answer generation.
+
+---
+
+## Cost Optimization
+
+Important practices learned:
+
+- Do not recompute embeddings unnecessarily
+- Compute question embedding once
+- Store embeddings permanently
+- Avoid repeated API calls
+
+---
+
+## Async vs Sync API Calls
+
+- Async can speed up bulk embedding generation.
+- Timeout handling is important.
+- JSON-safe handling required while saving responses.
+
+---
+
+## ask_question.py Workflow
+
+Process:
+
+- Load stored embeddings
+- Generate embedding for user question
+- Calculate similarity
+- Sort results
+- Retrieve top matches
+
+This forms the retrieval part of a RAG system.
+
+---
+
+## Summary
+
+This session moved from theory to implementation and demonstrated how to build a working retrieval system using embeddings, similarity search, and chunking.

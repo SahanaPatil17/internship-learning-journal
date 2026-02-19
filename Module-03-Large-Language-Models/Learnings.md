@@ -288,3 +288,64 @@ Efficiency matters in production systems.
 ## Conclusion
 
 This session strengthened my understanding of building a working retrieval pipeline using embeddings, chunking, similarity search, and efficient API usage — forming the foundation for a production-ready RAG system.
+
+
+## Session 3 
+
+This session helped me shift from just “solving questions” to understanding system-level behavior.
+
+### Configuration Over Code
+
+I learned that many technical failures are not coding mistakes but configuration mistakes.  
+Common root causes:
+- Wrong base URL
+- Token mismatch
+- Missing environment variable
+- Header misconfiguration
+
+Backend systems are highly sensitive to small configuration differences.
+
+---
+
+### Deployment Is Not Just Running Code
+
+Running code locally does not mean:
+- It will deploy correctly
+- It will pass validation
+- It will match evaluation schema
+
+Deployment requires:
+- Exact JSON formatting
+- Proper endpoint structure
+- Correct HTTP methods
+- Clean response schema
+
+Even small formatting mismatches can cause failure.
+
+---
+
+### Debugging Is a Skill
+
+Instead of retrying blindly, debugging requires:
+- Checking status codes
+- Inspecting network requests
+- Verifying authentication
+- Reviewing logs
+- Reproducing issues systematically
+
+This session emphasized structured troubleshooting rather than guesswork.
+
+---
+
+### Prompt Engineering Requires Creativity
+
+Prompt engineering is not about writing code.  
+It requires:
+- Role assignment
+- Instruction constraints
+- Reframing questions
+- Guiding the model behavior indirectly
+
+This improved my understanding of how LLMs respond to instruction framing.
+
+This session strengthened my backend awareness and improved my confidence in handling deployment-related issues.

@@ -399,3 +399,109 @@ This forms the retrieval part of a RAG system.
 ## Summary
 
 This session moved from theory to implementation and demonstrated how to build a working retrieval system using embeddings, similarity search, and chunking.
+
+
+## Session 3
+
+This session was focused on technical troubleshooting, configuration clarity, and deeper understanding of how backend systems, authentication, and deployment workflows function in real-world scenarios.
+
+### API Key & Token Management
+
+A major topic was OpenAI API key expiration and configuration issues. The discussion clarified:
+
+- Difference between AI Pipe and AI Proxy  
+- How both act as intermediaries between user applications and OpenAI  
+- Why replacing base URLs and tokens correctly is critical  
+- Importance of storing API keys in environment variables instead of hardcoding  
+
+Many errors were traced back to:
+- Incorrect base URL usage  
+- Expired or misconfigured tokens  
+- Improper environment variable setup  
+
+This reinforced the importance of environment-level configuration management.
+
+---
+
+### Google Authentication Issues (GA2)
+
+Students faced issues with:
+- Client ID mismatch  
+- Key errors  
+- OAuth configuration problems  
+- Service activation issues  
+
+The session emphasized:
+- Ensuring credentials are properly generated in Google Cloud Console  
+- Matching client IDs correctly  
+- Verifying active services  
+- Checking request headers  
+
+Authentication failures are often configuration-based, not logic-based.
+
+---
+
+### FastAPI Deployment Challenges
+
+A key concept discussed was the difference between:
+- Local success  
+- Deployment success  
+- Evaluation validation success  
+
+Even if:
+- The API runs locally  
+- The endpoint returns JSON  
+
+It may still fail because:
+- JSON format doesn’t match expected schema  
+- Headers are incorrect  
+- Authentication is enabled unintentionally  
+- Endpoint path mismatch  
+- Incorrect response structure  
+
+Deployment debugging requires:
+- Testing via browser  
+- Checking status codes  
+- Inspecting request/response format  
+- Ensuring exact format compliance  
+
+---
+
+### Debugging Using Chrome DevTools
+
+Students were encouraged to:
+- Open Network tab  
+- Inspect request headers  
+- Check response payload  
+- Analyze status codes (403, 401, 500)  
+- Verify CORS and authentication settings  
+
+This demonstrated practical frontend-backend debugging skills.
+
+---
+
+### Prompt Engineering (GA3 Q11)
+
+A conceptual highlight was prompt engineering:
+
+- The task required forcing an LLM to say "yes"
+- It was clarified that no coding was required
+- The solution required creative prompting
+- Framing, instruction structure, and constraints matter significantly
+
+This introduced the idea that:
+> Prompt design directly influences model behavior.
+
+---
+
+### Course Design Insight
+
+The session also clarified:
+- The course intentionally exposes many tools early
+- Depth comes through repeated usage, not one-time mastery
+- Debugging is part of building coding confidence
+- Raising questions early improves learning speed
+
+---
+
+Overall, this session strengthened understanding of authentication systems, API configuration, deployment validation, and real-world debugging practices.

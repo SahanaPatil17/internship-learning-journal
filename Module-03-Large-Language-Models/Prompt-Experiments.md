@@ -1,4 +1,4 @@
-# Prompt Experiments for session 1
+# Session 1
 
 This file documents prompt experimentation and observations during Module 3.
 
@@ -120,3 +120,175 @@ Prompt experimentation is essential for:
 - Reducing inconsistencies
 - Optimizing cost and performance
 - Preparing models for production deployment
+
+# Session 2 
+
+This session involved experimentation with embeddings and retrieval-based questioning.
+
+---
+
+## Experiment 1 – Semantic Similarity
+
+Compared:
+
+- "apple" & "orange"
+- "apple" & "lightning"
+
+Observation:
+- Similar objects had higher cosine similarity.
+- Unrelated words had lower similarity.
+
+Learning:
+Embeddings capture semantic meaning, not just keywords.
+
+---
+
+## Experiment 2 – Multimodal Matching
+
+Compared:
+
+- Image of cat ↔ Text "cat"
+- Image of cat ↔ Text "box"
+
+Observation:
+- Correct cross-modal similarity detected.
+- Low similarity for unrelated objects.
+
+Learning:
+Multimodal embeddings enable cross-modal understanding.
+
+---
+
+## Experiment 3 – Chunk-Based Retrieval
+
+Question:
+"What is the purpose of TypeScript?"
+
+Process:
+- Generate embedding for question.
+- Compare with stored chunk embeddings.
+- Sort by similarity.
+- Retrieve Top-5.
+
+Observation:
+- Correct documentation file ranked highest.
+- Retrieval accurately identified relevant section.
+
+Learning:
+Similarity sorting is essential for RAG.
+
+---
+
+## Experiment 4 – Boolean Operator Question
+
+Question:
+"Which operator converts a value into explicit boolean?"
+
+Observation:
+- Correct document retrieved.
+- Relevant markdown section identified.
+
+Learning:
+RAG can pinpoint exact documentation sections.
+
+---
+
+## Experiment 5 – Cost Optimization
+
+Initial mistake:
+- Recomputing embeddings repeatedly.
+
+Improvement:
+- Store embeddings once.
+- Reuse stored vectors.
+- Compute question embedding only once.
+
+Learning:
+Efficiency matters in production systems.
+
+This session strengthened my understanding of building a working retrieval pipeline using embeddings, chunking, similarity search, and efficient API usage — forming the foundation for a production-ready RAG system.
+
+
+## Session 3 
+
+### Experiment 1: Forcing LLM to Respond “Yes”
+
+Initial Approach:
+- Direct instruction: “Reply only with yes.”
+Result:
+- Inconsistent output.
+
+Improved Approach:
+- Assigned role-based constraints.
+- Framed system instruction.
+- Added conditional formatting instructions.
+- Used reinforcement in prompt structure.
+
+Observation:
+LLMs respond differently based on:
+- Context framing
+- Role definition
+- Instruction clarity
+- Constraint enforcement
+
+Key Insight:
+Prompt engineering is about behavioral control, not syntax.
+
+---
+
+### Experiment 2: API Token Troubleshooting
+
+Steps Tested:
+- Switched between AI Pipe and AI Proxy.
+- Verified environment variable loading.
+- Replaced base URL correctly.
+- Restarted server after updating tokens.
+
+Findings:
+Errors were caused by:
+- Wrong base endpoint
+- Missing token in environment
+- Token not exported properly
+
+Lesson:
+Environment setup must be validated before debugging logic.
+
+---
+
+### Experiment 3: FastAPI Deployment Validation
+
+Steps:
+- Verified local endpoint
+- Tested deployed URL
+- Compared JSON structure
+- Checked headers
+- Reviewed authentication settings
+
+Observation:
+Even valid JSON may fail if:
+- Key names mismatch
+- Extra wrapper object exists
+- Content type incorrect
+- Authentication blocking request
+
+Lesson:
+Strict format compliance is essential in automated evaluation systems.
+
+---
+
+### Experiment 4: Network Debugging
+
+Used:
+- Chrome DevTools Network tab
+- Response preview
+- Status code inspection
+- Header validation
+
+Common Issues Identified:
+- 403 Forbidden (authentication issue)
+- 401 Unauthorized (token issue)
+- 500 Internal Server Error (logic/config issue)
+
+Lesson:
+Backend debugging requires systematic validation of request-response cycle.
+

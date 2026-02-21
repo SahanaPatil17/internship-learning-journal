@@ -292,3 +292,53 @@ Common Issues Identified:
 Lesson:
 Backend debugging requires systematic validation of request-response cycle.
 
+## Session 4 
+
+### Chat Completion Experiment
+- Built a chatbot using Chat Completion API.
+- Passed role-based messages (developer, user, assistant).
+- Maintained conversation history manually.
+- Extracted only the required `content` field from JSON response.
+
+Observation: LLMs rely entirely on provided message history for context.
+
+---
+
+### Embedding & Similarity Experiment
+- Generated embedding vectors using embedding API.
+- Compared vectors using cosine similarity.
+- Tested similarity between related and unrelated words.
+- Verified that higher cosine similarity indicates stronger semantic relation.
+
+Observation: Distance and cosine similarity behave differently (minimize distance, maximize cosine).
+
+---
+
+### Base64 Image Encoding
+- Converted image → binary → Base64 string.
+- Reconstructed Base64 → binary → image.
+- Verified no data loss.
+
+Observation: Base64 is essential for sending images through APIs.
+
+---
+
+### Multimodal Embedding Experiment
+- Generated embeddings for both text and images.
+- Confirmed same-dimensional vectors are required for comparison.
+- Tested similarity between image embedding and text embedding.
+
+Observation: Multimodal models enable cross-modal semantic comparison.
+
+---
+
+### Function Calling Experiment
+- Defined function schema with parameters.
+- Used `tool_choice="required"`.
+- Extracted structured fields: manufacturing date, expiry date, product name.
+- Parsed JSON from `tool_calls` in response.
+
+Observation: Function calling provides reliable structured output compared to free-text responses.
+
+---
+

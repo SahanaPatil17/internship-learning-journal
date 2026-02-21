@@ -7,28 +7,28 @@
 
 ---
 
-## 📌 Objective
+## Objective
 This repository documents my learning journey during the internship.  
 All notes, assignments, and session-wise learnings are organized module-wise and chapter-wise.
 
 ---
 
-## 🗂 Course Reference
+## Course Reference
 Course Link: https://tds.s-anand.net/#/
 
 ---
 
-## 📚 Modules Covered
+## Modules Covered
 
 | Module | Topics | Status |
 |--------|--------|--------|
 | Module 01 | Foundations (Linux, CLI, Git, GitHub, Tooling) | Completed |
 | Module 02 | FastAPI, Deployment, API Workflows | Completed|
-| Module 03 | Project Work | Not Started |
+| Module 03 | LLMs, Embeddings, Vector Databases, Multimodal APIs | In Progress |
 
 ---
 
-## ✍️ How to Use This Repository
+## How to Use This Repository
 - Each **module** has its own folder  
 - Each **chapter/session** has a separate markdown file  
 - Files include:
@@ -40,9 +40,9 @@ Course Link: https://tds.s-anand.net/#/
 
 ---
 
-## 🚀 Key Learnings So Far
+## Key Learnings So Far
 
-### 🔹 Week 1 Highlights
+### Week 1 Highlights
 - Computer boot process, BIOS/UEFI, and hypervisors  
 - Linux file system hierarchy and command-line navigation  
 - Differences between Linux and Windows environments  
@@ -55,7 +55,7 @@ Course Link: https://tds.s-anand.net/#/
 
 ---
 
-### 🔹 Week 2 Highlights
+### Week 2 Highlights
 - Introduction to FastAPI framework and backend API development  
 - Understanding request–response lifecycle in web applications  
 - Implementing GET and POST endpoints  
@@ -79,13 +79,33 @@ Course Link: https://tds.s-anand.net/#/
 
 ---
 
-## 🔄 Weekly Update Log
+### Week 3 Highlights
+- Introduction to Large Language Models (LLMs) and API-based usage  
+- Understanding OpenAI Chat Completion API structure  
+- Role-based messaging (system/developer, user, assistant)  
+- Managing conversation history in chatbot development  
+- Working with HTTP requests using `curl` and Python (`httpx`)  
+- Understanding API tokens, environment variables, and authentication  
+- Introduction to text embeddings and semantic similarity  
+- Calculating cosine similarity using NumPy  
+- Understanding high-dimensional vector representations  
+- Concept of vector databases and semantic search  
+- Basics of Retrieval-Augmented Generation (RAG)  
+- Handling API key troubleshooting and configuration issues  
+- Base64 encoding and decoding for image handling  
+- Introduction to multimodal APIs (text + image inputs)  
+- Function calling in LLMs for structured JSON output extraction  
+- Understanding structured schema definitions for reliable responses  
+
+---
+
+## Weekly Update Log
 
 | Week | What I Learned |
 |------|----------------|
 | Week 1 | Linux & WSL concepts, CLI fundamentals, Git & GitHub setup, SSH authentication, repository workflows, AI tooling (conceptual understanding due to setup issues) |
 | Week 2 | FastAPI backend development, API validation, curl testing, environment variable management, Docker basics, cloud deployment (Vercel & Hugging Face), execution constraints, and complete TDS workflow architecture |
-
+| Week 3 | LLM APIs, embeddings & cosine similarity, vector databases, RAG concepts, chatbot memory handling, multimodal API usage, Base64 encoding, function calling for structured outputs, and API troubleshooting techniques |
 
 ---
 

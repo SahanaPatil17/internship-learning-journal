@@ -505,3 +505,95 @@ The session also clarified:
 ---
 
 Overall, this session strengthened understanding of authentication systems, API configuration, deployment validation, and real-world debugging practices.
+
+## Session 4 
+
+This session focused on understanding how OpenAI APIs work in detail, including HTTP requests, embeddings, multimodal inputs, and function calling.
+
+### OpenAI API & HTTP Requests
+We learned how to make API calls using:
+- `curl` commands  
+- Python `httpx` library  
+- POST requests with headers and JSON body  
+
+Key components of an API call:
+- URL (endpoint)
+- Headers (Authorization, Content-Type)
+- JSON data (model, messages, parameters)
+
+We explored the **Chat Completion API**, selected cost-effective models like **GPT-4.1 nano**, and understood how to extract structured responses from the returned JSON object.
+
+---
+
+### Roles & Chatbot with History
+Messages in Chat Completion follow structured roles:
+- `developer/system` → instructions
+- `user` → user query
+- `assistant` → model response
+
+LLMs do not have memory by default. Chat history must be passed again in every request to maintain context. We built a chatbot that stores conversation history inside a list of dictionaries.
+
+---
+
+### Word Embeddings & Semantic Meaning
+Words are converted into high-dimensional vectors (e.g., 1500+ dimensions). These embeddings capture semantic meaning.
+
+Similarity is measured using:
+- **Euclidean Distance** (smaller = more similar)
+- **Cosine Similarity** (higher = more similar)
+
+We used NumPy to calculate:
+- Dot product
+- Vector norm
+- Cosine similarity
+
+---
+
+### Vector Databases & RAG Concept
+Embeddings can be stored in a vector database. When a query embedding is generated:
+- Distance is computed with stored embeddings
+- Most similar text is retrieved
+
+This forms the base of **Retrieval-Augmented Generation (RAG)** systems.
+
+---
+
+### Base64 Encoding & Image Handling
+Images cannot be directly sent in raw binary format. They must be:
+1. Read as binary  
+2. Encoded to Base64  
+3. Sent as structured image input in the API  
+
+Base64 encoding allows lossless conversion of image → text → image.
+
+---
+
+### Multimodal Embeddings
+Unlike normal text embeddings, multimodal models (e.g., Ginga API) can generate embeddings for:
+- Text
+- Images
+- Other media  
+
+All embeddings must have the same dimension to compare similarity.
+
+---
+
+### Function Calling & Structured Output
+Function calling allows LLMs to return structured JSON instead of plain text.
+
+Key elements:
+- `tools` (list of function schemas)
+- `tool_choice` (required / auto / none)
+- Function schema (name, description, parameters, properties)
+
+We built a schema to extract:
+- Manufacturing Date (MFD)
+- Expiry Date
+- Product Name
+- User Question Answer
+
+Function calling ensures reliable structured data extraction from images.
+
+---
+
+Overall, this session combined API handling, embeddings, multimodal processing, and structured function outputs into practical mini-projects.

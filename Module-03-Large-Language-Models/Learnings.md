@@ -349,3 +349,17 @@ It requires:
 This improved my understanding of how LLMs respond to instruction framing.
 
 This session strengthened my backend awareness and improved my confidence in handling deployment-related issues.
+ 
+## Session 4 
+
+In this session, I gained a strong understanding of how OpenAI APIs work at a low level. I learned how to construct HTTP POST requests using headers, JSON payloads, and authentication tokens. I understood how to choose cost-effective models and read API documentation properly.
+
+I learned that LLMs do not have memory and that context must be passed manually using role-based message structures. Building a chatbot helped me understand how conversation history is maintained.
+
+I developed a deeper understanding of word embeddings and how semantic similarity is calculated using cosine similarity and vector distance. I also understood how embeddings form the foundation of vector databases and RAG systems.
+
+I learned how images are converted to Base64 before being sent to the API and how multimodal models generate embeddings for both text and images.
+
+The most important learning was function calling, where structured JSON responses are extracted using schema definitions. This helped me understand how LLMs can return reliable structured outputs instead of free-form text.
+
+This session significantly improved my understanding of API communication, embeddings, vector similarity, multimodal processing, and structured data extraction.

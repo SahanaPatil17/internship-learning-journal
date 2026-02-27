@@ -143,3 +143,82 @@ Mumbai – 14 Day Weather Forecast
 - Live weather data
 - Requires script re-execution for updates
 - Structured through HTML tag-based scraping
+
+---
+
+## GitHub Actions
+
+GitHub Actions Documentation:
+https://docs.github.com/en/actions
+
+Workflow Syntax:
+https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+
+Schedule Event:
+https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
+
+Cron Expression Builder:
+https://crontab.guru/
+
+GitHub Status Page:
+https://www.githubstatus.com/
+
+---
+
+## Screen Scraping with Gemini
+
+Google AI Studio:
+https://aistudio.google.com/
+
+Gemini Overview:
+https://deepmind.google/technologies/gemini/
+
+Gemini API Documentation:
+https://ai.google.dev/docs
+
+Simon Willison (AI & scraping research inspiration):
+https://simonwillison.net/
+
+OCR Reference:
+https://en.wikipedia.org/wiki/Optical_character_recognition
+
+Multimodal Learning:
+https://en.wikipedia.org/wiki/Multimodal_learning
+
+---
+
+## Microsoft MarkItDown
+
+Microsoft MarkItDown GitHub Repository:
+(Search: "Microsoft MarkItDown GitHub")
+
+Markdown Guide:
+https://www.markdownguide.org/
+
+OpenAI Platform:
+https://platform.openai.com/
+
+IBM Docling (Comparison Tool):
+https://github.com/IBM/docling
+
+RAG Concept:
+https://www.pinecone.io/learn/retrieval-augmented-generation/
+
+---
+
+## Nominatim – OpenStreetMap
+
+OpenStreetMap:
+https://www.openstreetmap.org/
+
+Nominatim Official Documentation:
+https://nominatim.org/
+
+Geopy Documentation:
+https://geopy.readthedocs.io/
+
+OpenStreetMap Licensing:
+https://www.openstreetmap.org/copyright
+
+Google Maps Geocoding (Comparison):
+https://developers.google.com/maps/documentation/geocoding

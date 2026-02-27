@@ -182,3 +182,162 @@ Created a clean 14-day weather forecast dataset for Mumbai, ready for:
 - Forecast comparison
 - Visualization
 - Storage for future processing
+
+---
+
+## GitHub Actions – Scheduling & Automation
+
+Core Learning:
+GitHub Actions allows automation of workflows based on events such as push, pull request, or schedule (cron).
+
+Key Concepts Learned:
+
+• Workflows must be inside `.github/workflows/`
+• YAML syntax is used to define jobs and triggers
+• Cron expressions define time-based execution
+• All schedules run in UTC timezone
+• GitHub does NOT guarantee exact execution timing
+
+Cron Structure:
+Minute Hour Day Month Day-of-week
+
+Example:
+*/5 * * * *
+Runs every 5 minutes.
+
+Important Insight:
+Even if you schedule something every 5 minutes, GitHub may delay execution due to internal queueing. Therefore, scheduled workflows should NOT be used for real-time monitoring.
+
+Practical Applications:
+• Automated deployments
+• Dependency scanning
+• Security checks
+• Monthly reports
+• Periodic backups
+
+Major Takeaway:
+Automation is powerful but must be designed with execution delays in mind.
+
+---
+
+## Screen Scraping with Gemini – Vision-Based Data Extraction
+
+Core Learning:
+Instead of scraping HTML using BeautifulSoup or Selenium, we can record screen content and let a multimodal LLM extract structured information from image frames.
+
+Technical Insights:
+
+• Recording at 1 frame per second converts each second into an analyzable image.
+• Gemini processes video as sequential frames.
+• Each frame costs tokens (~250 tokens/image).
+• JSON mode must be enabled for structured output.
+• This method relies on computer vision instead of DOM parsing.
+
+Cost Efficiency:
+Even 1000 frames cost only a few cents, making this scalable.
+
+Advantages:
+• Works on dynamic websites
+• Bypasses HTML structure complexity
+• Handles JavaScript-rendered content
+• No need for browser automation
+
+Limitations:
+• Depends on visible content
+• May skip content if scrolling too fast
+• Not ideal for high-speed scraping
+
+Major Insight:
+We are increasingly better at vision-based extraction using AI than writing custom scraping logic.
+
+Shift Observed:
+Code-based automation → Vision-based automation
+
+---
+
+## Microsoft MarkItDown – Document Standardization for LLMs
+
+Core Learning:
+MarkItDown converts multiple file formats into clean Markdown, making documents LLM-friendly.
+
+Why Markdown?
+• Lightweight
+• Human-readable
+• Platform-independent
+• Easy to chunk for embeddings
+• Ideal for RAG pipelines
+
+Modes of Operation:
+
+A) Without LLM
+• Direct parsing
+• Fast conversion
+• Works for PDFs and structured documents
+
+B) With LLM
+• Enables OCR
+• Understands layout
+• Improves formatting quality
+
+Key Insight:
+Data preprocessing is foundational for LLM performance.
+
+Applications:
+• Preparing enterprise documents
+• Cleaning PDFs
+• Knowledge base preparation
+• Dataset generation
+• RAG system pipelines
+
+Comparison Insight:
+MarkItDown is promising, but tools like Docling are currently more mature.
+
+Major Takeaway:
+Unstructured data must be standardized before feeding into AI systems.
+
+---
+
+## Nominatim – Geocoding with OpenStreetMap
+
+Core Learning:
+Geocoding converts text-based location names into structured geographic data.
+
+Example:
+"IIT Madras" → Latitude, Longitude, Full Address
+
+Key Technical Points:
+
+• Nominatim is powered by OpenStreetMap.
+• Geopy is a Python wrapper for easy API access.
+• user_agent parameter is mandatory.
+• Returns structured JSON data.
+• Includes class and type categorization.
+
+Extractable Data:
+• Latitude
+• Longitude
+• Display name
+• Bounding box
+• Class (tourism, amenity, etc.)
+• Type (university, attraction, hospital)
+
+Applications:
+• Mapping applications
+• Location analytics
+• Delivery systems
+• Geo-tagging datasets
+• Urban planning
+
+Major Takeaway:
+Unstructured address text → Structured geographic intelligence.
+
+---
+
+## OVERALL TECHNICAL INSIGHTS FROM ALL SESSIONS
+
+1. Automation (GitHub Actions) enables scheduled DevOps workflows.
+2. Vision-based scraping reduces dependency on traditional HTML parsing.
+3. Document conversion to Markdown improves LLM processing quality.
+4. Geocoding enables spatial intelligence from text.
+5. Structured output (JSON/Markdown) is essential for scalable AI systems.
+6. Data preprocessing directly impacts AI/ML system performance.

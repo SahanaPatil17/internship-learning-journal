@@ -290,3 +290,60 @@ Used for:
 - Show working demos.
 - Use AI tools as coding copilots.
 - Iterate with small correct steps.
+
+# Scraping PDFs
+
+## Primary Website
+
+Premier League Publications Page:
+- Contains seasonal handbooks
+- Fixtures documents
+- Competition documentation
+- 25–30 downloadable PDFs
+
+---
+
+## 📚 Libraries Referenced
+
+### 1. BeautifulSoup (bs4)
+Documentation:
+- HTML parsing
+- Extracting anchor tags
+- Filtering file links
+
+---
+
+### 2. tabula
+Key Features:
+- Extract tables from PDF
+- read_pdf()
+- convert_into()
+- area parameter
+- pages parameter
+
+---
+
+### 3. pandas
+Used for:
+- DataFrame inspection
+- Structured tabular processing
+
+---
+
+## Key Concepts
+
+- PDF scraping vs HTML scraping
+- File handling in Python
+- Binary file writing
+- Page-specific extraction
+- Region-based table detection
+
+---
+
+## Tools & Techniques
+
+- HTML parsing
+- String manipulation
+- File I/O
+- Structured data conversion
+- Automated batch downloading

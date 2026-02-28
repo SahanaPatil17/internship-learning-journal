@@ -450,3 +450,95 @@ OVERALL TECHNICAL TAKEAWAYS
 4. Geocoding converts unstructured text into structured geographic intelligence.
 5. Data preprocessing is critical for AI/ML applications.
 6. Structured output (JSON / Markdown) is essential for scalable systems.
+
+# DocSearch Scraping Tutorial
+
+## Files Created
+
+### 1. scrape2.py
+Main Python script used to:
+- Iterate through archive pages
+- Extract article URLs
+- Scrape individual article content
+- Save structured output
+
+### 2. cache2/ (Directory)
+- Stores cached HTML responses
+- Uses MD5 hash of URLs as filenames
+- Prevents repeated downloads during development
+
+### 3. urls2.txt
+- Stores extracted article URLs
+- Allows resuming scraping without repeating archive parsing
+
+### 4. scraped2.json
+- Final structured output
+- Contains:
+  - title
+  - body content
+
+### 5. scraped2.csv (Optional)
+- Alternative export using pandas
+- Tabular representation of scraped content
+
+
+---
+
+## Python Libraries Used
+
+### 1. httpx
+- Used instead of `requests`
+- Supports async (if needed later)
+- Allows redirect handling
+- Used with:
+  - `follow_redirects=True`
+  - `raise_for_status()`
+
+### 2. lxml.html
+- Used for fast and standards-compliant HTML parsing
+- Used XPath expressions for content extraction
+
+### 3. tqdm
+- Displays progress bar while iterating pages
+
+### 4. hashlib
+- Used MD5 hashing for safe cache filenames
+
+### 5. os
+- Directory creation
+- File existence checks
+- Path handling
+
+### 6. json
+- Saving structured scraped data
+
+### 7. pandas (optional)
+- Exporting results to CSV
+
+
+---
+
+## Website Scraped
+
+- Insider Intelligence archive
+- ~369 archive pages
+- ~7000 articles scraped
+- Structure:
+  - Archive pages list article links
+  - Each article page contains:
+    - Title (H1 with specific class)
+    - Body content (within structured div containers)
+
+
+---
+
+## Architecture Flow
+
+1. Loop through archive pages (archive/1 → archive/n)
+2. Extract links containing `/content/`
+3. Deduplicate links using set
+4. Loop through article URLs
+5. Fetch content using cached_get()
+6. Parse title and body via XPath
+7. Store structured results
+8. Save JSON incrementally

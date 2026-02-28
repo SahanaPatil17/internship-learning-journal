@@ -38,7 +38,7 @@ Using **Refresh**, Excel fetches the latest updated data.
 
 ## Topic: Scraping Data from IMDB using Python
 
-### 🔹 Type of Source
+### Type of Source
 - Public Website
 - HTML Structured Data
 - Static Web Page
@@ -542,3 +542,120 @@ Main Python script used to:
 6. Parse title and body via XPath
 7. Store structured results
 8. Save JSON incrementally
+
+# Scraping PDFs
+
+## Files Created
+
+### 1. Downloaded PDF Files
+- Source: Premier League publications webpage
+- Approximately 25–30 PDF documents
+- Stored in:
+  - Local folder (e.g., ./premier_league/)
+  - Or Google Drive (if using Colab)
+
+Examples:
+- Premier League Handbook 2021-22.pdf
+- Premier League 2 Handbook.pdf
+- Fixtures PDF
+- Season Preview PDFs
+
+---
+
+### 2. pl_interactive_combine.pdf
+- Selected PDF for table extraction
+- Contains ~19 pages
+- Page 18 contains final league standings table
+
+---
+
+### 3. table_output.csv
+- Structured CSV extracted from page 18
+- Generated using tabula.convert_into()
+- Contains:
+  - Team name
+  - Final standings
+  - Additional parsed table columns
+
+---
+
+## Python Libraries Used
+
+### 1. BeautifulSoup (bs4)
+Purpose:
+- Parse HTML of webpage
+- Extract anchor tags
+- Filter links ending with ".pdf"
+
+Used with:
+- HTML parser
+- find_all('a')
+
+---
+
+### 2. requests (implicitly used)
+Purpose:
+- Download PDF files
+- Write binary content to disk
+
+---
+
+### 3. tabula
+Purpose:
+- Read tables from PDFs
+- Convert extracted tables into DataFrame
+- Export directly to CSV
+
+Important Functions:
+- read_pdf()
+- convert_into()
+
+Parameters Used:
+- pages=18
+- pages="all"
+- area=[top, left, bottom, right]
+- output_format="csv"
+
+---
+
+### pandas (optional)
+Purpose:
+- Store extracted tables
+- Inspect DataFrame before saving
+
+---
+
+## Website Used
+
+Premier League Publications Page:
+- Multiple season handbooks
+- Fixtures PDFs
+- League documentation
+
+---
+
+## Workflow Architecture
+
+Step 1:
+- Parse webpage using BeautifulSoup
+
+Step 2:
+- Extract all links ending with ".pdf"
+
+Step 3:
+- Generate filename using:
+  link.split("/")[-1]
+
+Step 4:
+- Download each PDF and store locally
+
+Step 5:
+- Use tabula.read_pdf() to extract tables
+
+Step 6:
+- Refine extraction using:
+  - Specific page number
+  - area parameter
+
+Step 7:
+- Convert cleaned table into CSV

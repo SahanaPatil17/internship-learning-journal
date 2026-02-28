@@ -461,3 +461,101 @@ Expect imperfections.
 - Small experiments can win major opportunities.
 - Rapid prototyping changes competitive advantage.
 - Technical curiosity + structured thinking = leverage.
+
+# Scraping PDFs
+
+### 1. Extracting PDFs from Webpages
+
+- Use BeautifulSoup to parse HTML.
+- Extract anchor tags.
+- Filter links ending in ".pdf".
+- Use string split to extract filename:
+  link.split("/")[-1]
+
+This allows automated downloading of multiple PDFs from a single page.
+
+---
+
+### 2. Handling File Storage
+
+- Create folder if not exists.
+- Use Google Drive (Colab) or local directory.
+- Write PDF in binary mode.
+
+Automation avoids manual downloading of 25–30 documents.
+
+---
+
+### 3. Reading Tables from PDFs
+
+Tabula library:
+- Works similar to pandas.read_csv
+- Uses read_pdf()
+
+Example:
+- pages=18 → extracts only page 18
+- pages="all" → extracts all tables
+
+---
+
+### 4. Problem: Extra Content in Table Extraction
+
+Issue:
+- Tabula detected multiple sections as tables.
+- Page layout (landscape formatting) caused misinterpretation.
+- Non-table content included.
+
+Example:
+- Newcastle United "125 years" text extracted unintentionally.
+- Logos ignored (image content not parsed).
+
+---
+
+### 5. Solution: Area Parameter
+
+Tabula allows:
+area=[top, left, bottom, right]
+
+This:
+- Restricts extraction to specific region.
+- Removes unwanted content.
+- Produces clean structured table.
+
+This is critical for precise PDF parsing.
+
+---
+
+### 6. Direct CSV Conversion
+
+Using:
+convert_into()
+
+Benefits:
+- Directly outputs CSV file.
+- Reduces manual post-processing.
+- Faster pipeline from PDF → structured data.
+
+---
+
+## Practical Insights
+
+- PDF scraping is different from HTML scraping.
+- Layout matters significantly.
+- Always inspect extracted DataFrame before saving.
+- Fine-tuning extraction region improves accuracy.
+
+---
+
+## Broader Learning
+
+PDF scraping workflow:
+
+Webpage → PDF download → Table extraction → Cleaning → CSV export
+
+This pipeline is useful for:
+- Financial reports
+- Government documents
+- Sports analytics
+- Research publications
+
+Automating PDF table extraction saves hours of manual work.

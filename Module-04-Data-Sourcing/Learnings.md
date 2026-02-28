@@ -341,3 +341,123 @@ Unstructured address text → Structured geographic intelligence.
 4. Geocoding enables spatial intelligence from text.
 5. Structured output (JSON/Markdown) is essential for scalable AI systems.
 6. Data preprocessing directly impacts AI/ML system performance.
+
+# DocSearch Scraping Tutorial
+
+### 1. Semantic Search vs Keyword Search
+- Keyword search matches exact words.
+- Semantic search uses embeddings to find meaning.
+- Scraped data enabled building a semantic proof-of-concept search engine.
+
+---
+
+### 2. Caching is Critical During Development
+
+The `cached_get()` pattern:
+- Saves HTML responses locally.
+- Prevents re-downloading on every run.
+- Makes debugging dramatically faster.
+- Allows safe interruption and resume.
+
+Core idea:
+- If cached file exists → load from disk.
+- Else → fetch, save, then return.
+
+This reflects the principle:
+> Laziness, impatience, and hubris are programmer virtues.
+
+---
+
+### 3. Scraping Strategy
+
+Scraping process must be broken into stages:
+
+1. Get archive page URLs.
+2. Extract article links.
+3. Deduplicate links.
+4. Fetch article pages.
+5. Parse structured content.
+6. Store structured output.
+
+Small correct steps > Big complex logic.
+
+---
+
+### 4. XPath > Guesswork
+
+Using browser DevTools:
+- Inspect elements
+- Identify stable container divs
+- Avoid sidebars, popups, widgets
+- Use `contains()` in XPath instead of exact class matching
+
+Trial and error is normal.
+
+---
+
+### 5. Debugging Techniques (Top 3)
+
+#### Print Liberally
+Print variables frequently to confirm expectations.
+
+#### Use Breakpoints
+Use `breakpoint()` or debugger to inspect variables when confused.
+
+#### Rubber Ducking
+Explain the problem clearly (to a person or LLM).
+Often clarity emerges during explanation itself.
+
+---
+
+### 6. Use LLMs Properly
+
+Two modes:
+- Ask implementation questions (e.g., how to use httpx)
+- Ask troubleshooting strategy questions
+
+Important:
+- Be specific.
+- Mention preferred libraries.
+- Ask for short, readable code.
+
+---
+
+### 7. Proof of Concept > Presentation
+
+A working demo:
+- Converts clients faster than slides.
+- Shows capability instantly.
+- Enables rapid production deployment.
+
+Portfolio > Certificates.
+
+---
+
+### 8. Save Incrementally
+
+Write output JSON inside loop.
+Benefits:
+- Inspect progress early.
+- Build next system phase without waiting for completion.
+- Avoid losing hours of scraping.
+
+---
+
+### 9. Handle Edge Cases
+
+Real-world scraping requires:
+- Redirect handling
+- Empty responses
+- HTTP 200 with empty content
+- Class name mismatches
+- Deduplication
+
+Expect imperfections.
+
+---
+
+## Broader Insight
+
+- Small experiments can win major opportunities.
+- Rapid prototyping changes competitive advantage.
+- Technical curiosity + structured thinking = leverage.

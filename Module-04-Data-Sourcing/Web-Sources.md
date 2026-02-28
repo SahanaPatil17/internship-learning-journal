@@ -222,3 +222,71 @@ https://www.openstreetmap.org/copyright
 
 Google Maps Geocoding (Comparison):
 https://developers.google.com/maps/documentation/geocoding
+
+# DocSearch Scraping Tutorial
+
+## Primary Website
+
+- Insider Intelligence Archive
+  - ~369 pages
+  - ~7000 articles
+  - Structured content pages
+
+Used as real-world scraping target for semantic search demo.
+
+
+---
+
+## Tools Referenced
+
+### 1. httpx Documentation
+Used for:
+- HTTP requests
+- Redirect handling
+- Timeout management
+
+### 2. lxml Documentation
+Used for:
+- XPath parsing
+- HTML tree navigation
+
+### 3. tqdm Documentation
+Used for:
+- Progress monitoring in loops
+
+### 4. Stack Overflow
+Used indirectly via LLM search tools for:
+- Debugging httpx
+- Redirect issues
+- XPath troubleshooting
+
+---
+
+## LLM Tools Mentioned
+
+- ChatGPT
+- Bing AI
+- Phind
+
+Used for:
+- Generating short Python snippets
+- Debugging assistance
+- Research-backed answers
+
+---
+
+## Referenced Concepts
+
+- Rubber Duck Debugging
+- Ignobel Prize
+- Friday Night Experiments
+- Discovery of Graphene (example of experimental research culture)
+
+---
+
+## Key Philosophy
+
+- Build fast prototypes.
+- Show working demos.
+- Use AI tools as coding copilots.
+- Iterate with small correct steps.

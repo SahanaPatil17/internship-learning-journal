@@ -559,3 +559,37 @@ This pipeline is useful for:
 - Research publications
 
 Automating PDF table extraction saves hours of manual work.
+
+# Vibe Coding
+
+## Core Concepts Learned
+
+- Understanding "Vibe Coding" as idea-first development rather than syntax-first coding.
+- Translating problem statements into structured implementation steps.
+- Rapid prototyping using AI-assisted tools.
+- Effective prompt engineering for generating clean and usable code.
+
+---
+
+## Technical Learnings
+
+- How to integrate APIs into Python applications.
+- Handling JSON data and parsing responses.
+- Managing API keys securely using environment variables.
+- Structuring a project for scalability and readability.
+- Debugging AI-generated code efficiently.
+
+---
+
+## Practical Skills Gained
+
+- Thinking in terms of product design rather than just code.
+- Breaking large problems into smaller functional modules.
+- Improving development speed using automation tools.
+- Writing cleaner, more maintainable code.
+
+---
+
+## Overall Outcome
+
+The workshop improved my confidence in building applications quickly using modern development practices. It helped me understand how AI can enhance productivity while still requiring strong logical thinking and structured problem-solving skills.

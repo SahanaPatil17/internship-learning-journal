@@ -659,3 +659,49 @@ Step 6:
 
 Step 7:
 - Convert cleaned table into CSV
+
+# Vibe Coding
+
+## Files
+
+### 1. main.py
+Core application file where the primary logic of the project was implemented. It handled user input, API calls, and output rendering.
+
+### 2. requirements.txt
+Contained all required Python dependencies such as:
+- requests
+- fastapi / flask (for backend handling)
+- openai (for AI-assisted coding, if used)
+- pandas (for data handling)
+
+### 3. .env
+Stored environment variables such as API keys and configuration settings securely.
+
+### 4. README.md
+Documented project overview, setup instructions, and usage steps.
+
+---
+
+## APIs Used
+
+### 1. OpenAI API
+Used for AI-assisted code generation, prompt-based responses, and automation support.
+
+### 2. REST APIs
+Demonstrated how to:
+- Send GET and POST requests
+- Handle JSON responses
+- Integrate third-party services into applications
+
+### 3. GitHub API (Conceptual Demonstration)
+Showed how repositories, commits, and automation workflows can be managed programmatically.
+
+---
+
+## Tools & Platforms
+
+- VS Code
+- GitHub
+- Postman (for API testing)
+- Python
+- AI coding assistants

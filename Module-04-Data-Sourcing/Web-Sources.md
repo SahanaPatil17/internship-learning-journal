@@ -347,3 +347,31 @@ Used for:
 - File I/O
 - Structured data conversion
 - Automated batch downloading
+
+# Vibe Coding
+
+## Documentation References
+
+1. OpenAI API Documentation  
+   https://platform.openai.com/docs
+
+2. Python Official Documentation  
+   https://docs.python.org/3/
+
+3. FastAPI Documentation  
+   https://fastapi.tiangolo.com/
+
+4. Requests Library Documentation  
+   https://docs.python-requests.org/
+
+5. GitHub Documentation  
+   https://docs.github.com/
+
+---
+
+## Tools Referenced
+
+- Visual Studio Code: https://code.visualstudio.com/
+- Postman API Testing Tool: https://www.postman.com/
+
+These resources were used to understand API integration, backend development, and AI-assisted coding workflows demonstrated in the workshop.

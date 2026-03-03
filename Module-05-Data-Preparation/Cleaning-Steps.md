@@ -73,3 +73,41 @@
 5. Excel shows count of removed duplicates and remaining unique values.
 
 ---
+
+# Data Transformation in Excel
+
+## Step 1: Compute Ratios
+- Calculate Metro Area / City Area.
+- Calculate Metro Population / City Population.
+- Use AutoFill to apply formulas across rows.
+- Handle missing values carefully.
+
+---
+
+## Step 2: Create Pivot Table
+- Insert Pivot Table from entire dataset.
+- Create in new worksheet.
+
+---
+
+## Step 3: Detect Duplicates
+- Drag Country to Rows.
+- Add Country again to Values → Count.
+- Identify frequency of records per country.
+
+---
+
+## Step 4: Aggregate Continuous Variables
+- Add City Proper Population to Values → Sum.
+- View total population by country.
+
+---
+
+## Step 5: Identify Outliers
+- Insert Pivot Chart (Bar Chart).
+- Apply country filter.
+- Observe extreme values in:
+  - Population
+  - Density ratios
+
+---

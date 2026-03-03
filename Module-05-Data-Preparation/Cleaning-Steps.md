@@ -191,3 +191,57 @@ Result:
 - Apply formatting for clarity.
 
 ---
+
+# Data Aggregation in Excel
+
+## Dataset Used
+- COVID-19 dataset
+- Columns included: Date, Location (Country), New Cases, Total Cases, New Deaths, Total Deaths
+
+---
+
+## Step 1: Remove Unnecessary Columns
+- Deleted columns with excessive missing values.
+- Focused only on:
+  - Date
+  - Location
+  - New Cases
+
+---
+
+## Step 2: Remove Blank Rows
+1. Select "New Cases" column.
+2. Go to Home → Find & Select → Go To Special.
+3. Choose "Blanks".
+4. Right-click → Delete → Entire Row.
+
+Result:
+- Removed rows with missing new case values.
+- Ensured clean dataset for aggregation.
+
+---
+
+## Step 3: Convert Dataset into Excel Table
+1. Select full dataset.
+2. Go to Insert → Table.
+3. Confirm "My table has headers".
+
+Benefits:
+- Automatic filters.
+- Auto-fill formulas.
+- Structured referencing.
+
+---
+
+## Step 4: Create Time-Based Columns
+Added new columns:
+- Week → `=WEEKNUM(Date,1)`
+- Month → `=TEXT(Date,"mmm")`
+- Year → `=TEXT(Date,"yyyy")`
+
+Adjusted format:
+- Changed Week column from Date to Number.
+- Removed decimal places.
+
+Result:
+- Dataset ready for weekly, monthly, yearly aggregation.

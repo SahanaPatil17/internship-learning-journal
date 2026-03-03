@@ -122,3 +122,96 @@
 - Prepared data for further analysis or visualization.
 
 ---
+
+# Data Aggregation in Excel
+
+## 1. Weekly Aggregation using Pivot Table
+
+Objective:
+- Aggregate sum of New Cases
+- Group by Country and Week
+- Separate by Year (2020 & 2021)
+
+### Pivot Setup:
+- Rows → Location (Country)
+- Columns → Week
+- Values → Sum of New Cases
+- Filter/Row grouping → Year
+
+Insight:
+- Weekly trends of COVID cases across countries.
+
+---
+
+## 2. Monthly Aggregation using Pivot Table
+
+Objective:
+- Aggregate sum of New Cases
+- Group by Month and Country
+- Separate by Year
+
+### Pivot Setup:
+- Rows → Year → Month
+- Columns → Location
+- Values → Sum of New Cases
+
+Insight:
+- Monthly wave patterns of COVID cases.
+
+---
+
+## 3. Color Scales (Conditional Formatting)
+
+Purpose:
+- Identify clusters of high and low new cases.
+
+Configuration:
+- 3-Color Scale:
+  - Green → Low cases
+  - Yellow → Medium
+  - Red → High cases
+
+Insight:
+- Visual clustering of infection waves.
+- Zoomed-out view shows progression trends.
+
+---
+
+## 4. Sparklines (Trend Visualization)
+
+Purpose:
+- Show weekly trend of new cases per country.
+
+Steps:
+- Insert → Line Sparkline.
+- Data range → Weekly aggregated values.
+- Enable High Point & Low Point markers.
+
+Insight:
+- Quick trend comparison across years.
+- Identified peaks (e.g., India peak mid-2021).
+
+---
+
+## 5. Data Bars (Graphic Illustration)
+
+Purpose:
+- Visual representation of monthly aggregated data.
+
+Steps:
+- Select pivot values.
+- Conditional Formatting → Data Bars.
+- Used Gradient and Solid fills.
+
+Insight:
+- Clear wave patterns across months.
+- Easy identification of peaks and declines.
+
+---
+
+## Result
+Raw COVID dataset transformed into:
+- Weekly and Monthly aggregated summaries.
+- Trend visualizations.
+- Cluster identification tools.
+- Insight-driven comparative analysis across countries and years.

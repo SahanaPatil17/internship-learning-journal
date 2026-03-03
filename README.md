@@ -3,7 +3,7 @@
 **USN:** 2BL22CI037  
 **GitHub Username:** SahanaPatil17  
 **Department:** CSE(AI&ML)  
-**Internship Start Date:** 02-02-2026  
+**Internship Start Date:** 03-02-2026  
 
 ---
 
@@ -24,7 +24,9 @@ Course Link: https://tds.s-anand.net/#/
 |--------|--------|--------|
 | Module 01 | Foundations (Linux, CLI, Git, GitHub, Tooling) | Completed |
 | Module 02 | FastAPI, Deployment, API Workflows | Completed|
-| Module 03 | LLMs, Embeddings, Vector Databases, Multimodal APIs | In Progress |
+| Module 03 | LLMs, Embeddings, Vector Databases, Multimodal APIs | Completed |
+| Module 04 | Data Sourcing | Completed |
+| Module 05 | Data Preparation | In progress |
 
 ---
 
@@ -95,7 +97,22 @@ Course Link: https://tds.s-anand.net/#/
 - Base64 encoding and decoding for image handling  
 - Introduction to multimodal APIs (text + image inputs)  
 - Function calling in LLMs for structured JSON output extraction  
-- Understanding structured schema definitions for reliable responses  
+- Understanding structured schema definitions for reliable responses
+
+### Week 4 Highlights
+- Introduction to web scraping fundamentals  
+- Understanding HTML structure (tags, classes, IDs)  
+- Extracting data from websites using Python (requests & BeautifulSoup)  
+- Parsing and cleaning scraped HTML content  
+- Scraping structured data such as tables  
+- Handling pagination and dynamic content sources  
+- Downloading and extracting data from PDFs  
+- Identifying and extracting specific tables from PDFs  
+- Working with OpenStreetMap (Nominatim API) for geolocation data  
+- Making structured API calls to retrieve real-world datasets  
+- Storing scraped and API data into Pandas DataFrames  
+- Data cleaning and preprocessing after scraping  
+- Understanding ethical scraping practices and rate limits  
 
 ---
 
@@ -106,6 +123,7 @@ Course Link: https://tds.s-anand.net/#/
 | Week 1 | Linux & WSL concepts, CLI fundamentals, Git & GitHub setup, SSH authentication, repository workflows, AI tooling (conceptual understanding due to setup issues) |
 | Week 2 | FastAPI backend development, API validation, curl testing, environment variable management, Docker basics, cloud deployment (Vercel & Hugging Face), execution constraints, and complete TDS workflow architecture |
 | Week 3 | LLM APIs, embeddings & cosine similarity, vector databases, RAG concepts, chatbot memory handling, multimodal API usage, Base64 encoding, function calling for structured outputs, and API troubleshooting techniques |
+| Week 4 | Web scraping fundamentals, HTML parsing, PDF data extraction, OpenStreetMap API usage, structured data sourcing, and data cleaning for analysis |
 
 ---
 

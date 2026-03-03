@@ -111,3 +111,83 @@
   - Density ratios
 
 ---
+
+# Convert Text to Columns in Excel
+
+## Dataset Used
+- Source: US Senate voting records (copied from website).
+- Original format: Entire record pasted into a single column.
+- Content included:
+  - Senator Name
+  - Party
+  - State
+  - Vote (Yea/Nay/Not Voting)
+
+---
+
+## Problem
+All values were combined in one column separated by:
+- Left parenthesis "("
+- Hyphen "-"
+- Right parenthesis ")"
+- Comma ","
+
+This made the dataset unstructured and unsuitable for analysis.
+
+---
+
+## Step 1: Split by Left Parenthesis "("
+1. Select the column.
+2. Go to Data → Text to Columns.
+3. Choose "Delimited".
+4. Select "Other" and enter "(".
+5. Click Next → Finish.
+
+Result:
+- Senator name separated from remaining data.
+
+---
+
+## Step 2: Split by Hyphen "-"
+1. Select the new column.
+2. Data → Text to Columns.
+3. Delimited → Other → "-".
+4. Finish.
+
+Result:
+- Party separated into its own column.
+
+---
+
+## Step 3: Split by Right Parenthesis ")"
+1. Select remaining column.
+2. Data → Text to Columns.
+3. Delimited → Other → ")".
+4. Finish.
+
+Result:
+- State extracted into a separate column.
+
+---
+
+## Step 4: Split by Comma ","
+1. Select final column.
+2. Data → Text to Columns.
+3. Delimited → Select "Comma".
+4. Finish.
+
+Result:
+- Vote (Yea/Nay/Not Voting) separated.
+
+---
+
+## Step 5: Final Formatting
+- Delete unnecessary extra columns.
+- Add headers:
+  - Senator
+  - Party
+  - State
+  - Vote
+- Apply formatting for clarity.
+
+---

@@ -92,3 +92,33 @@
   - US: Los Angeles highest density (crowding ratio).
 
 ---
+
+# Text to Columns in Excel
+
+## Structural Transformations
+- Converted single-column raw text into multiple structured columns.
+- Extracted categorical variables from mixed strings.
+
+---
+
+## Delimiter-Based Transformations
+- "(" → Separated Senator Name.
+- "-" → Extracted Party.
+- ")" → Extracted State.
+- "," → Extracted Vote Status.
+
+---
+
+## Data Structuring
+- Transformed unstructured web data into tabular format.
+- Created clean column headers.
+- Removed redundant columns created during splitting.
+
+---
+
+## Analytical Readiness
+- Converted scraped text into CSV-like dataset.
+- Enabled filtering, sorting, and aggregation.
+- Prepared data for further analysis or visualization.
+
+---

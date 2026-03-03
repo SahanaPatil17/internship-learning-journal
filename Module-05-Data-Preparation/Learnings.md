@@ -25,3 +25,31 @@
 10. Outliers can be identified visually through bar charts.
 11. Excel supports both numerical transformation and analytical summarization.
 12. Data transformation enhances interpretability of cleaned datasets.
+
+# Convert Text to Columns in Excel
+
+1. Text to Columns is useful for structuring scraped web data.
+2. Delimiters help split combined text into meaningful fields.
+3. Multiple iterative splits may be required for complex strings.
+4. Excel supports both Delimited and Fixed Width splitting.
+5. Common delimiters include commas, hyphens, and parentheses.
+6. Structured data improves readability and usability.
+7. Proper column headers enhance clarity.
+8. Clean tabular data is essential before analysis.
+9. Text to Columns simplifies conversion to CSV format.
+10. Excel can act as a quick preprocessing tool for scraped datasets.
+
+# Data Aggregation in Excel
+
+1. Data aggregation summarizes large datasets for easier interpretation.
+2. Cleaning missing values is essential before aggregation.
+3. Converting data into Excel Tables improves efficiency.
+4. WEEKNUM and TEXT functions help extract time components.
+5. Pivot Tables enable multi-level aggregation (Country → Week → Year).
+6. Value Field Settings allow Sum, Average, Max, etc.
+7. Color Scales help visually detect clusters.
+8. Sparklines show compact trend visualization.
+9. Data Bars provide quick graphical comparison.
+10. Aggregated data reveals trends not visible in raw data.
+11. Visualization enhances insight extraction.
+12. Excel can perform both data preparation and exploratory analysis.

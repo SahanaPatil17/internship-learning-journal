@@ -71,3 +71,16 @@
 13. Command pipelines allow efficient data transformation workflows.
 14. `sed` can modify text streams and reformat data.
 15. Shell commands are useful for preparing data before loading it into tools like Excel or Python.
+
+# Data Preparation in the Editor
+
+1. Text editors like Visual Studio Code can be used for quick data preparation tasks.
+2. JSON formatting improves readability of structured data.
+3. The command palette (`Ctrl + Shift + P`) provides powerful editing utilities.
+4. Multi-cursor editing enables simultaneous editing of multiple text locations.
+5. `Alt + Enter` can select all occurrences of a search term.
+6. Sorting lines helps organize and analyze data values.
+7. Removing duplicate lines helps identify unique values in datasets.
+8. Search and replace tools assist in correcting inconsistent data entries.
+9. Text editors can perform lightweight data cleaning without specialized tools.
+10. Keyboard shortcuts significantly improve data processing speed.

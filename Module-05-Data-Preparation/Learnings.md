@@ -53,3 +53,21 @@
 10. Aggregated data reveals trends not visible in raw data.
 11. Visualization enhances insight extraction.
 12. Excel can perform both data preparation and exploratory analysis.
+
+# Data Preparation in the Shell
+
+1. Unix shell provides powerful tools for quick data preparation.
+2. Command-line tools are fast because they are implemented in C.
+3. Data pipelines allow chaining multiple commands efficiently.
+4. `curl` is useful for downloading datasets from URLs.
+5. `ls` helps verify file presence and size.
+6. `gzip` is used to compress and decompress datasets.
+7. `head` and `tail` help preview large datasets.
+8. `wc -l` is used to count records in a dataset.
+9. `cut` extracts specific columns from structured text files.
+10. `sort` organizes data for easier analysis.
+11. `uniq -c` counts unique values in sorted datasets.
+12. `grep` enables pattern matching and filtering using regular expressions.
+13. Command pipelines allow efficient data transformation workflows.
+14. `sed` can modify text streams and reformat data.
+15. Shell commands are useful for preparing data before loading it into tools like Excel or Python.

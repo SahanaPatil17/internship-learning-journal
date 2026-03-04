@@ -245,3 +245,138 @@ Adjusted format:
 
 Result:
 - Dataset ready for weekly, monthly, yearly aggregation.
+
+---
+
+# Data Preparation in the Shell
+
+## Dataset Used
+- Web server log file from a website.
+- Log file for April 2024 downloaded from a URL.
+- Contains fields such as:
+  - IP Address
+  - Date & Time
+  - Request
+  - HTTP Response Code
+  - Response Size
+  - Referral Source
+  - User Agent
+
+---
+
+## Step 1: Download the Dataset
+Used the `curl` command to download the compressed log file.
+
+Command:
+curl --location --continue-at - --output s.net-April-2024.log.gz <URL>
+
+Purpose:
+- Fetch dataset from the web.
+- Follow redirects.
+- Save the file locally.
+
+---
+
+## Step 2: Verify File Download
+Used `ls` command to check file presence.
+
+Command:
+ls
+ls -l
+
+Purpose:
+- List files in the directory.
+- Verify file size and successful download.
+
+---
+
+## Step 3: Decompress the Log File
+The file was compressed using gzip.
+
+Command:
+gzip --decompress s.net-April-2024.log.gz
+
+Purpose:
+- Convert compressed log file into readable format.
+
+---
+
+## Step 4: Inspect Data
+Used commands to preview file contents.
+
+Commands:
+head -n 5 filename
+tail -n 5 filename
+
+Purpose:
+- View first and last few lines.
+- Understand structure of the log dataset.
+
+---
+
+## Step 5: Count Total Requests
+Used word count command.
+
+Command:
+wc -l filename
+
+Purpose:
+- Count number of lines (requests) in the log file.
+
+---
+
+## Step 6: Extract IP Addresses
+Used `cut` command.
+
+Command:
+cut -d " " -f1 filename
+
+Purpose:
+- Extract first column containing IP addresses.
+
+---
+
+## Step 7: Identify Most Frequent Requests
+Used combination of commands:
+
+cut → sort → uniq → sort
+
+Command pipeline:
+cut -d " " -f1 filename | sort | uniq -c | sort -n
+
+Purpose:
+- Count requests per IP address.
+- Identify high-traffic sources.
+
+---
+
+## Step 8: Search for Specific Patterns
+Used `grep` to find bot traffic.
+
+Command:
+grep "bot" filename
+
+Purpose:
+- Identify automated crawlers and bots accessing the site.
+
+---
+
+## Step 9: Convert Log Format for Analysis
+Used `sed` to modify log format and export as CSV-like file.
+
+Purpose:
+- Replace brackets with quotes.
+- Prepare file for spreadsheet analysis.
+
+---
+
+## Step 10: Export Sample for Spreadsheet Analysis
+Extracted subset of rows for easier analysis.
+
+Command:
+head -n 1000 log.csv > small.csv
+
+Purpose:
+- Create smaller dataset for Excel analysis.
+
+---

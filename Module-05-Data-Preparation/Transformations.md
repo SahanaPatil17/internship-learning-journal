@@ -215,3 +215,82 @@ Raw COVID dataset transformed into:
 - Trend visualizations.
 - Cluster identification tools.
 - Insight-driven comparative analysis across countries and years.
+
+---
+
+# Data Preparation using Shell Commands
+
+## 1. File Retrieval Transformation
+Downloaded web log data from a remote server using the curl command.
+
+Result:
+Raw compressed dataset obtained for analysis.
+
+---
+
+## 2. File Decompression
+Converted compressed `.gz` file into readable log format using gzip.
+
+Transformation:
+Compressed file → Plain text log file.
+
+---
+
+## 3. Data Inspection
+Used `head` and `tail` commands to preview the dataset structure.
+
+Transformation:
+Large dataset → Sample view for understanding format.
+
+---
+
+## 4. Data Counting
+Applied `wc -l` to count total records.
+
+Insight:
+Number of requests made to the website during the month.
+
+---
+
+## 5. Field Extraction
+Used `cut` command to isolate specific fields.
+
+Example:
+Extracted IP addresses from the first column.
+
+Transformation:
+Multi-field log data → Single-column IP dataset.
+
+---
+
+## 6. Sorting and Frequency Analysis
+Used pipeline commands:
+
+cut → sort → uniq → sort
+
+Transformation:
+Raw IP list → Ranked list of request frequency.
+
+Insight:
+Identified which IP addresses generated the most traffic.
+
+---
+
+## 7. Pattern Detection
+Used `grep` with regular expressions to detect bots.
+
+Transformation:
+Filtered log entries containing bot identifiers.
+
+Insight:
+Recognized automated crawlers such as Googlebot and Applebot.
+
+---
+
+## 8. Log Format Conversion
+Used `sed` to replace brackets with quotes.
+
+Transformation:
+Web log format → CSV-like structured format.
+
+---

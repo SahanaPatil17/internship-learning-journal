@@ -294,3 +294,60 @@ Transformation:
 Web log format → CSV-like structured format.
 
 ---
+
+# Data Preparation using a Text Editor
+
+## 1. JSON Formatting
+Converted compact JSON structure into readable hierarchical format.
+
+Transformation:
+Compressed JSON → Structured JSON format.
+
+Purpose:
+Improved readability and easier data extraction.
+
+---
+
+## 2. Field Extraction
+Extracted specific attributes such as City and Product using multi-selection.
+
+Transformation:
+Full JSON dataset → Individual attribute lists.
+
+Purpose:
+Focused analysis on specific columns.
+
+---
+
+## 3. Data Sorting
+Applied alphabetical sorting to extracted city values.
+
+Transformation:
+Unordered list → Sorted dataset.
+
+Purpose:
+Identify duplicates and inconsistencies easily.
+
+---
+
+## 4. Duplicate Removal
+Used editor command to delete duplicate lines.
+
+Transformation:
+Repeated values → Unique value list.
+
+Purpose:
+Identify distinct cities in the dataset.
+
+---
+
+## 5. Data Standardization
+Corrected spelling variations of city names using multi-cursor editing.
+
+Example:
+Different spellings of Bangalore → Standardized as "Bangalore".
+
+Purpose:
+Ensure consistency in categorical data.
+
+---

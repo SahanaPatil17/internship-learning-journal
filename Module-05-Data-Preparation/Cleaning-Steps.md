@@ -380,3 +380,101 @@ Purpose:
 - Create smaller dataset for Excel analysis.
 
 ---
+
+# Data Preparation in the Editor
+
+## Dataset Used
+- JSON dataset containing sales records.
+- Each record contains fields such as:
+  - City
+  - Product
+  - Sales
+
+The dataset initially appeared in a compressed and less readable format.
+
+---
+
+## Step 1: Format the JSON File
+Opened the dataset in Visual Studio Code and formatted it.
+
+Steps:
+1. Open file in VS Code.
+2. Press `Ctrl + Shift + P`.
+3. Select **Format Document**.
+
+Purpose:
+- Convert the compact JSON structure into a readable format.
+
+---
+
+## Step 2: Extract Specific Fields
+Extracted the **City** field values.
+
+Steps:
+1. Select the word "city".
+2. Press `Ctrl + F`.
+3. Press `Alt + Enter` to select all matches.
+4. Press `Shift + End` to extend selection.
+5. Copy and paste extracted values into a new window.
+
+Result:
+- All city values extracted into a separate list.
+
+---
+
+## Step 3: Extract Product Field
+Repeated the same process to extract **Product** values.
+
+Purpose:
+- Separate relevant fields for further analysis.
+
+---
+
+## Step 4: Sort Extracted Data
+Used VS Code command palette to sort the extracted city list.
+
+Steps:
+1. Press `Ctrl + Shift + P`.
+2. Select **Sort Lines Ascending**.
+
+Purpose:
+- Organize values alphabetically.
+
+---
+
+## Step 5: Remove Duplicate Values
+Steps:
+1. Open command palette.
+2. Select **Delete Duplicate Lines**.
+
+Result:
+- Obtained unique city values.
+
+---
+
+## Step 6: Standardize Inconsistent Entries
+Observed inconsistent spellings of city names.
+
+Example:
+- Bangalore spelled in multiple ways.
+
+Steps:
+1. Use `Ctrl + F` to search variations.
+2. Press `Alt + Enter` to select all occurrences.
+3. Edit all instances simultaneously using multi-cursor.
+
+Result:
+- Corrected all city name variations to a standard format.
+
+---
+
+## Final Output
+Cleaned dataset with:
+- Proper formatting
+- Extracted fields
+- Sorted values
+- Removed duplicates
+- Standardized city names
+
+---
+

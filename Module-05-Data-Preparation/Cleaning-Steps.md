@@ -478,3 +478,186 @@ Cleaned dataset with:
 
 ---
 
+# Cleaning Data with OpenRefine
+
+## Dataset Used
+- Dataset from the U.S. Department of Justice.
+- Fields included:
+  - Case ID
+  - Trade Name
+  - Legal Name
+  - Street Address
+
+The dataset contained multiple variations of the same entity due to punctuation and formatting differences.
+
+---
+
+## Step 1: Import Dataset
+1. Download and install OpenRefine.
+2. Launch OpenRefine (opens in browser).
+3. Select **Create Project**.
+4. Upload the dataset file.
+5. Click **Next → Create Project**.
+
+Purpose:
+Load the dataset into OpenRefine for cleaning.
+
+---
+
+## Step 2: Identify Inconsistent Entries
+Examined address and entity name columns.
+
+Example problem:
+- "XYZ Limited"
+- "XYZ Ltd"
+
+Both represent the same entity but appear as separate records.
+
+---
+
+## Step 3: Create Text Facet
+Steps:
+1. Click the dropdown arrow on the target column.
+2. Select **Facet → Text Facet**.
+
+Purpose:
+- View frequency distribution of values.
+- Identify repeated or inconsistent entries.
+
+---
+
+## Step 4: Apply Clustering
+Steps:
+1. Click **Cluster** in the facet panel.
+2. OpenRefine suggests groups of similar values.
+
+Example:
+- "9227 Haven Avenue Suite 330"
+- "9227 Haven Avenue Suite 330.,"
+
+These were identified as similar entries.
+
+---
+
+## Step 5: Merge Similar Entries
+Options:
+- Merge clusters manually.
+- Or use **Merge Selected & Re-cluster** to combine all suggested matches.
+
+Purpose:
+Standardize similar entries into one consistent value.
+
+---
+
+## Final Output
+Clean dataset with:
+- Standardized entity names
+- Merged duplicate addresses
+- Improved consistency for aggregation and analysis
+
+---
+
+# Discover Data Profile with Python
+
+## Dataset Used
+- Dataset containing information about the largest cities.
+- Fields include:
+  - Country
+  - City population
+  - Population density
+  - Urban area population
+  - Metropolitan population
+
+The dataset was analyzed using the Pandas Profiling library.
+
+---
+
+## Step 1: Import Required Libraries
+Import pandas and pandas profiling library.
+
+Example:
+import pandas as pd
+from pandas_profiling import ProfileReport
+
+Purpose:
+Load necessary tools for automated dataset analysis.
+
+---
+
+## Step 2: Load the Dataset
+Load the dataset into a pandas DataFrame.
+
+Example:
+df = pd.read_csv("dataset.csv")
+
+Purpose:
+Store dataset in a structured format for analysis.
+
+---
+
+## Step 3: Generate Data Profile Report
+Create a profiling report using a single line of code.
+
+Example:
+profile = ProfileReport(df)
+
+Purpose:
+Automatically analyze the dataset structure and statistics.
+
+---
+
+## Step 4: Export the Report
+Save the report as an HTML file.
+
+Example:
+profile.to_file("report.html")
+
+Purpose:
+Generate a visual report containing dataset insights.
+
+---
+
+## Step 5: Inspect Dataset Insights
+Open the generated report to examine:
+
+- Number of variables
+- Number of observations
+- Missing values
+- Numerical vs categorical variables
+
+Purpose:
+Understand dataset structure before further analysis.
+
+---
+
+## Step 6: Identify Outliers
+Examine extreme values in numerical variables.
+
+Example:
+- City proper population
+- City proper density
+
+Purpose:
+Detect unusual values that may require cleaning.
+
+---
+
+## Step 7: Check Correlations
+Use correlation section in the report to detect highly correlated variables.
+
+Example:
+- Urban area population vs metropolitan population.
+
+Purpose:
+Identify redundant features and relationships between variables.
+
+---
+
+## Final Output
+Automated data profile report that highlights:
+- Data distribution
+- Outliers
+- Missing values
+- Correlations
+
+---

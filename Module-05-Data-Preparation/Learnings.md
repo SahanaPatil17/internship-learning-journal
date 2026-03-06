@@ -84,3 +84,29 @@
 8. Search and replace tools assist in correcting inconsistent data entries.
 9. Text editors can perform lightweight data cleaning without specialized tools.
 10. Keyboard shortcuts significantly improve data processing speed.
+
+# Cleaning Data with OpenRefine
+
+1. OpenRefine is an open-source tool for data cleaning and transformation.
+2. It was originally developed as a Google project.
+3. The tool runs locally but opens in a browser interface.
+4. It is particularly useful for cleaning messy datasets.
+5. Text Facets help analyze frequency of values in a column.
+6. Clustering algorithms detect similar but slightly different text entries.
+7. Entity resolution helps merge records referring to the same real-world entity.
+8. OpenRefine allows both manual and automated data merging.
+9. Standardizing categorical data improves aggregation accuracy.
+10. OpenRefine is widely used in data cleaning workflows.
+
+# Discover Data Profile with Python
+
+1. Pandas Profiling is a library used for automated exploratory data analysis.
+2. It generates a detailed dataset report with minimal code.
+3. The report provides dataset structure, statistics, and visualizations.
+4. It helps identify missing values in the dataset.
+5. It automatically detects outliers in numerical variables.
+6. The report shows distributions of categorical and numerical variables.
+7. Correlation analysis helps detect relationships between variables.
+8. Automated reports reduce manual exploratory analysis effort.
+9. Pandas Profiling helps identify potential data quality issues early.
+10. It is commonly used before model building in data science workflows.

@@ -351,3 +351,104 @@ Purpose:
 Ensure consistency in categorical data.
 
 ---
+
+# Data Cleaning with OpenRefine
+
+## 1. Dataset Import
+Uploaded raw dataset into OpenRefine.
+
+Transformation:
+External dataset → OpenRefine project environment.
+
+---
+
+## 2. Frequency Analysis
+Used **Text Facet** to analyze value frequency in columns.
+
+Transformation:
+Raw column values → Frequency grouped values.
+
+Purpose:
+Identify repeated or inconsistent entries.
+
+---
+
+## 3. Similarity Detection
+Used **Clustering algorithm** to detect similar records.
+
+Transformation:
+Multiple textual variations → grouped clusters.
+
+Example:
+"XYZ Limited" and "XYZ Ltd"
+
+---
+
+## 4. Entity Resolution
+Merged clustered entries into standardized values.
+
+Transformation:
+Duplicate or inconsistent entries → single unified entity.
+
+---
+
+# Data Profiling using Pandas Profiling
+
+## 1. Dataset Import
+Loaded raw dataset into a pandas DataFrame.
+
+Transformation:
+Raw dataset → Structured pandas DataFrame.
+
+---
+
+## 2. Automated Data Profiling
+Generated a profiling report using Pandas Profiling.
+
+Transformation:
+Dataset → Automated analytical report.
+
+Purpose:
+Provide quick overview of dataset characteristics.
+
+---
+
+## 3. Distribution Analysis
+The report visualized distributions for both categorical and numerical variables.
+
+Examples:
+- Frequency distribution of countries
+- Distribution of city population values.
+
+---
+
+## 4. Outlier Detection
+Identified extreme values in numerical variables.
+
+Examples:
+- Chongqing as an outlier for population.
+- Manila as an outlier for population density.
+
+---
+
+## 5. Missing Value Analysis
+Detected columns with missing values.
+
+Example:
+Metropolitan population column contained ~50% missing data.
+
+Purpose:
+Decide whether to remove or impute missing values.
+
+---
+
+## 6. Correlation Analysis
+Generated correlation matrix between variables.
+
+Transformation:
+Independent variables → Correlation relationships.
+
+Purpose:
+Identify strong positive or negative correlations.
+
+---

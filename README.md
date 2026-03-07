@@ -26,7 +26,7 @@ Course Link: https://tds.s-anand.net/#/
 | Module 02 | FastAPI, Deployment, API Workflows | Completed|
 | Module 03 | LLMs, Embeddings, Vector Databases, Multimodal APIs | Completed |
 | Module 04 | Data Sourcing | Completed |
-| Module 05 | Data Preparation | In progress |
+| Module 05 | Data Preparation | Completed |
 
 ---
 
@@ -114,6 +114,25 @@ Course Link: https://tds.s-anand.net/#/
 - Data cleaning and preprocessing after scraping  
 - Understanding ethical scraping practices and rate limits  
 
+### Week 5 Highlights
+- Introduction to data preparation and preprocessing techniques  
+- Cleaning datasets using Microsoft Excel (Find & Replace, Trim, formatting)  
+- Identifying and removing blank rows and duplicate entries in datasets  
+- Converting raw text data into structured columns using Excel’s Text to Columns feature  
+- Understanding delimiters such as commas, hyphens, and parentheses in data splitting  
+- Using text editors (VS Code) for quick data extraction and editing using multi-cursor selection  
+- Sorting data and removing duplicate entries using editor commands  
+- Performing entity resolution and clustering using OpenRefine  
+- Detecting inconsistent entries and merging similar values in datasets  
+- Generating automated data profiling reports using Python Pandas Profiling  
+- Identifying missing values, correlations, distributions, and outliers in datasets  
+- Working with JSON APIs using Python scripts and analyzing API responses  
+- Parsing JSON data and sorting results programmatically  
+- Automating image manipulation tasks using the Pillow library in Python  
+- Performing batch image operations such as resizing, format conversion, rotation, and filtering  
+- Using FFMPEG for multimedia processing including format conversion and media transformations  
+- Understanding command-line based media processing workflows  
+
 ---
 
 ## Weekly Update Log
@@ -124,6 +143,7 @@ Course Link: https://tds.s-anand.net/#/
 | Week 2 | FastAPI backend development, API validation, curl testing, environment variable management, Docker basics, cloud deployment (Vercel & Hugging Face), execution constraints, and complete TDS workflow architecture |
 | Week 3 | LLM APIs, embeddings & cosine similarity, vector databases, RAG concepts, chatbot memory handling, multimodal API usage, Base64 encoding, function calling for structured outputs, and API troubleshooting techniques |
 | Week 4 | Web scraping fundamentals, HTML parsing, PDF data extraction, OpenStreetMap API usage, structured data sourcing, and data cleaning for analysis |
+| Week 5 | Data preparation techniques, Excel data cleaning, Text-to-Columns processing, VS Code based data editing, OpenRefine entity resolution, Pandas Profiling for dataset analysis, JSON API analysis with Python, image processing using Pillow, and multimedia processing with FFMPEG |
 
 ---
 

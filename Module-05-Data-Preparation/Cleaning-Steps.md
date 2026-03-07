@@ -661,3 +661,330 @@ Automated data profile report that highlights:
 - Correlations
 
 ---
+
+# Analyzing JSON APIs with Python
+
+## Dataset Used
+- JSON API from Homebrew containing package information.
+- Additional JSON APIs for individual packages containing analytics data.
+
+Fields extracted:
+- Package Name
+- Description
+- Installation analytics (30, 90, 365 days)
+
+---
+
+## Step 1: Import Required Libraries
+Imported necessary Python modules.
+
+Example:
+import requests
+import json
+import time
+
+Purpose:
+Enable API requests, JSON processing, and controlled request timing.
+
+---
+
+## Step 2: Fetch Package List from API
+Used the requests library to retrieve JSON data containing all available packages.
+
+Example:
+r = requests.get(API_URL)
+packages_json = r.json()
+
+Purpose:
+Obtain list of packages for further analysis.
+
+---
+
+## Step 3: Inspect JSON Structure
+Formatted JSON output using the json module for readability.
+
+Example:
+json.dumps(packages_json, indent=2)
+
+Purpose:
+Understand structure of returned API data.
+
+---
+
+## Step 4: Generate Package-Specific API URLs
+Constructed URLs dynamically using package names.
+
+Example:
+package_url = f"{base_url}/{package_name}.json"
+
+Purpose:
+Access analytics information for each individual package.
+
+---
+
+## Step 5: Extract Analytics Data
+Parsed nested JSON fields to obtain installation counts.
+
+Fields extracted:
+- Installations (30 days)
+- Installations (90 days)
+- Installations (365 days)
+
+Purpose:
+Collect popularity metrics for packages.
+
+---
+
+## Step 6: Loop Through All Packages
+Used a loop to retrieve analytics for every package.
+
+Purpose:
+Automate data collection for thousands of packages.
+
+---
+
+## Step 7: Store Results
+Saved collected data into a list of dictionaries.
+
+Example structure:
+{
+"name": package_name,
+"description": description,
+"analytics": {
+"30d": installs_30,
+"90d": installs_90,
+"365d": installs_365
+}
+}
+
+Purpose:
+Create structured dataset.
+
+---
+
+## Step 8: Export Data to JSON File
+Saved processed results locally.
+
+Example:
+json.dump(results, file, indent=2)
+
+Purpose:
+Reuse collected data without repeatedly querying the API.
+
+---
+
+## Step 9: Sort Results
+Created a custom sorting function to rank packages by popularity.
+
+Purpose:
+Identify most installed packages.
+
+---
+
+## Final Output
+Structured dataset containing package names, descriptions, and installation statistics sorted by popularity.
+
+---
+
+# Image Manipulation with Pillow (Python)
+
+## Dataset Used
+- Image files (JPEG format).
+- Example images used for manipulation such as resizing and format conversion.
+
+---
+
+## Step 1: Install Pillow Library
+Install the Pillow library using pip.
+
+Example:
+pip install pillow
+
+Purpose:
+Enable image processing capabilities in Python.
+
+---
+
+## Step 2: Import Required Modules
+Import image handling modules.
+
+Example:
+from PIL import Image
+from PIL import ImageFilter
+
+Purpose:
+Access image manipulation functions.
+
+---
+
+## Step 3: Open an Image File
+Create an image object.
+
+Example:
+img = Image.open("image.jpg")
+
+Purpose:
+Load the image into memory for processing.
+
+---
+
+## Step 4: Display Image
+Show the image using Python.
+
+Example:
+img.show()
+
+Purpose:
+Verify correct image loading.
+
+---
+
+## Step 5: Convert Image Format
+Save images in a different format.
+
+Example:
+img.save("image.png")
+
+Purpose:
+Convert image types (JPEG → PNG).
+
+---
+
+## Step 6: Process Multiple Images
+Use loops to process images in a directory.
+
+Example:
+for file in os.listdir():
+    if file.endswith(".jpg"):
+        img = Image.open(file)
+
+Purpose:
+Automate image processing tasks.
+
+---
+
+## Step 7: Resize Images
+Generate thumbnails using the thumbnail method.
+
+Example:
+img.thumbnail((300,300))
+
+Purpose:
+Create smaller images for thumbnails.
+
+---
+
+## Step 8: Save Processed Images
+Save resized images in a new directory.
+
+Example:
+img.save("300/image_300.jpg")
+
+Purpose:
+Store processed outputs separately.
+
+---
+
+## Step 9: Apply Image Transformations
+Examples:
+- Rotate image → img.rotate(90)
+- Convert to grayscale → img.convert("L")
+- Blur image → img.filter(ImageFilter.GaussianBlur)
+
+Purpose:
+Modify images for different visual effects.
+
+---
+
+## Final Output
+Automated script capable of resizing, converting, and modifying large batches of images efficiently.
+
+---
+
+# Media Processing using FFMPEG
+
+## Tool Used
+- FFMPEG (command-line multimedia processing tool)
+
+---
+
+## Step 1: Install FFMPEG
+Download the static version of FFMPEG from the official website.
+
+Purpose:
+Allows execution of multimedia processing commands from the command line.
+
+---
+
+## Step 2: Place Executable File
+Extract the FFMPEG executable from the archive and place it in a known directory.
+
+Optional:
+Add the directory to the system PATH variable for easier access.
+
+---
+
+## Step 3: Open Command Line
+Navigate to the folder containing the media file.
+
+Example:
+Shift + Right Click → Open Command Window Here.
+
+Purpose:
+Run FFMPEG commands in the correct working directory.
+
+---
+
+## Step 4: Basic Media Conversion
+Use the command syntax:
+
+ffmpeg -i input_file output_file
+
+Example:
+ffmpeg -i video.avi video.mp4
+
+Purpose:
+Convert media files between different formats.
+
+---
+
+## Step 5: Adjust Output Quality
+Use quality parameters during conversion.
+
+Examples:
+- AVI quality → -q value
+- MP4 quality → -crf value
+
+Purpose:
+Control file quality and compression.
+
+---
+
+## Step 6: Set Bitrates
+Specify audio or video bitrate.
+
+Example:
+-b:v 1000k (video bitrate)
+
+Purpose:
+Fine control over output file size and quality.
+
+---
+
+## Step 7: Apply Filters
+Use filters for modifying audio or video.
+
+Examples:
+- Volume adjustment
+- Audio channel mapping
+- Cropping video
+- Scaling video
+- Rotating video
+
+Purpose:
+Perform advanced media transformations during conversion.
+
+---
+
+## Final Output
+Media files converted, edited, and optimized using command-line FFMPEG operations.

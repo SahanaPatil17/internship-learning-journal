@@ -110,3 +110,44 @@
 8. Automated reports reduce manual exploratory analysis effort.
 9. Pandas Profiling helps identify potential data quality issues early.
 10. It is commonly used before model building in data science workflows.
+
+# Analyzing JSON APIs with Python
+
+1. APIs can be used to retrieve structured data from websites.
+2. The requests library simplifies API communication in Python.
+3. JSON is a common data format used in web APIs.
+4. JSON data can be parsed into Python dictionaries and lists.
+5. Formatting JSON improves readability and debugging.
+6. Nested JSON structures require multi-level key access.
+7. Python loops allow automation of repetitive API requests.
+8. Rate limiting and delays help avoid overloading servers.
+9. Custom dictionaries help organize extracted data.
+10. Data can be stored locally as JSON files for future analysis.
+11. Custom sorting functions enable ranking of data based on selected metrics.
+12. API data can be filtered and analyzed to extract meaningful insights.
+
+# Image Manipulation with Pillow
+
+1. Pillow is a Python library used for image processing.
+2. Images can be loaded into Python as objects for manipulation.
+3. Pillow supports operations like resizing, rotating, and filtering images.
+4. Image formats can be easily converted (e.g., JPEG to PNG).
+5. Batch processing allows handling multiple images automatically.
+6. Thumbnail generation preserves aspect ratios while resizing.
+7. Python scripts can automate repetitive image editing tasks.
+8. Filters such as blur can modify image appearance.
+9. Grayscale conversion allows transformation of color images.
+10. Pillow is widely used for image preprocessing in web applications and data workflows.
+
+# FFMPEG Media Processing
+
+1. FFMPEG is a powerful command-line tool for multimedia processing.
+2. It supports conversion of video, audio, and image formats.
+3. Basic syntax follows the structure: ffmpeg -i input output.
+4. Video quality can be controlled using quantizer or CRF values.
+5. Bitrate settings allow detailed control over compression levels.
+6. FFMPEG provides various audio and video filters.
+7. Filters can modify media through cropping, scaling, rotation, and volume changes.
+8. Command-line tools enable efficient batch processing of multimedia files.
+9. FFMPEG is widely used in media production, streaming, and data processing workflows.
+10. Understanding command flags helps perform advanced media manipulation tasks.

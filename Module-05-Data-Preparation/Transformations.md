@@ -452,3 +452,175 @@ Purpose:
 Identify strong positive or negative correlations.
 
 ---
+
+# JSON API Data Analysis with Python
+
+## 1. API Data Retrieval
+Fetched raw JSON data from Homebrew API.
+
+Transformation:
+Remote API JSON → Python data structures.
+
+---
+
+## 2. JSON Formatting
+Converted raw JSON into formatted strings for readability.
+
+Purpose:
+Understand dataset structure.
+
+---
+
+## 3. Dynamic URL Generation
+Created package-specific API URLs using package names.
+
+Transformation:
+Package list → Individual analytics endpoints.
+
+---
+
+## 4. Data Extraction
+Parsed nested JSON objects to extract installation statistics.
+
+Example:
+Analytics → installs (30, 90, 365 days).
+
+---
+
+## 5. Data Aggregation
+Combined extracted fields into custom dictionaries.
+
+Transformation:
+Multiple API responses → structured dataset.
+
+---
+
+## 6. Data Storage
+Saved processed results into a JSON file.
+
+Purpose:
+Avoid repeated API requests and enable faster analysis.
+
+---
+
+## 7. Data Sorting
+Implemented custom sorting function to rank packages by installation counts.
+
+Transformation:
+Unsorted package data → ranked popularity list.
+
+---
+
+# Image Processing with Pillow
+
+## 1. Image Loading
+Loaded images into Python using Pillow.
+
+Transformation:
+Image files → Python image objects.
+
+---
+
+## 2. Format Conversion
+Converted images between formats.
+
+Example:
+JPEG → PNG.
+
+---
+
+## 3. Batch Processing
+Looped through directory files to apply operations on multiple images.
+
+Transformation:
+Single image processing → automated batch processing.
+
+---
+
+## 4. Image Resizing
+Created thumbnails with defined dimensions.
+
+Example:
+300px and 700px images for web use.
+
+Purpose:
+Optimize images for websites and galleries.
+
+---
+
+## 5. Image Rotation
+Rotated images by specific angles.
+
+Example:
+90° rotation.
+
+---
+
+## 6. Color Transformation
+Converted colored images to grayscale.
+
+Purpose:
+Create black-and-white images.
+
+---
+
+## 7. Image Filtering
+Applied blur effects using Gaussian blur.
+
+Purpose:
+Modify visual appearance of images.
+
+---
+
+# Media Processing with FFMPEG
+
+## 1. Format Conversion
+Converted multimedia files between formats.
+
+Example:
+AVI → MP4
+
+Purpose:
+Ensure compatibility across devices and platforms.
+
+---
+
+## 2. Quality Adjustment
+Modified video quality using quantizer and CRF parameters.
+
+Purpose:
+Balance between video quality and file size.
+
+---
+
+## 3. Bitrate Configuration
+Specified audio and video bitrates.
+
+Example:
+Video bitrate: 1000k
+
+Purpose:
+Control compression and playback quality.
+
+---
+
+## 4. Audio Processing
+Applied audio filters such as:
+
+- Volume adjustment
+- Channel remapping
+
+Purpose:
+Improve or correct audio output.
+
+---
+
+## 5. Video Editing
+Applied video filters including:
+
+- Cropping
+- Scaling
+- Rotation
+
+Purpose:
+Modify video structure and dimensions.

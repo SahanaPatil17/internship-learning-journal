@@ -8,6 +8,16 @@ New vaccinations showed a small negative coefficient, suggesting that higher vac
 
 ---
 
+# Regression with Excel
+
+The regression model produced an Adjusted R Square value of approximately 0.816, indicating that around 81% of the variation in new deaths can be explained by the independent variables included in the model. The F-test significance value was below 0.05, suggesting that the regression model is statistically significant.
+
+The coefficient values showed that increases in new cases and new tests are associated with increases in deaths. Specifically, for every 1000 new cases, deaths increase by approximately 7, and for every 1000 new tests, deaths increase by about 0.69.
+
+New vaccinations showed a small negative coefficient, suggesting that higher vaccination numbers may slightly reduce deaths, although the effect was very small and cannot be considered conclusive. The stringency index had a positive coefficient but was statistically insignificant because its P-value was greater than 0.05, meaning it should not be included in the final model without further analysis.
+
+---
+
 # Forecasting with Excel
 
 Using the FORECAST (or FORECAST.LINEAR) function, Excel applies linear regression to estimate unknown values based on existing relationships between variables. In the height and weight dataset, the model predicted weight values based on height and vice versa.
@@ -57,3 +67,4 @@ Performance comparisons between Pandas and DuckDB showed that DuckDB can process
 DuckDB also demonstrated advantages in memory efficiency and flexibility. It can directly query files without loading them entirely into memory and allows SQL queries to be executed on existing Python variables such as Pandas DataFrames. This hybrid approach allows analysts to combine the strengths of SQL and Python within the same workflow.
 
 ---
+

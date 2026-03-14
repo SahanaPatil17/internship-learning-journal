@@ -68,3 +68,27 @@ DuckDB also demonstrated advantages in memory efficiency and flexibility. It can
 
 ---
 
+# Geospatial analysis with Excel
+
+
+---
+
+# Geospatial analysis with Python
+
+
+---
+
+# Geospatial analysis with QGIS
+
+
+---
+
+# Network analysis in Python
+
+
+---
+
+# Visualizing Machine Learning
+
+
+---

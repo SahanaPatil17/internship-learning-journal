@@ -90,3 +90,67 @@
 - Learned that DuckDB can significantly reduce processing time for large-scale data analysis tasks.
 
 ---
+
+# Geospatial analysis with Excel
+
+- Learned the concept of geospatial data analysis and its importance in business decision making.
+- Understood how location data and demographic data can be combined for geographic analysis.
+- Learned how Python libraries such as GeoPandas help merge geographic boundaries with datasets.
+- Explored how GIS tools and Excel 3D maps can visualize geographic coverage areas.
+- Understood how spatial analysis can help businesses identify profitable locations.
+- Learned how data storytelling can be used to communicate analytical insights effectively.
+- Gained awareness of how geographic analysis influences competitive business strategies.
+
+---
+
+# Geospatial analysis with Python
+
+- Learned the basics of geospatial analysis using Python.
+- Used geographic coordinates (latitude and longitude) to analyze store locations.
+- Learned how to calculate distances between locations using the geopy library.
+- Visualized geographic data using interactive maps with the Folium library.
+- Analyzed store density within a specified geographic radius.
+- Identified closest and farthest store locations relative to a central reference point.
+- Understood how geospatial analytics supports location-based business decisions.
+
+---
+
+# Geospatial analysis with QGIS
+
+- Learned the role of Geographic Information Systems (GIS) in geospatial data analysis.
+- Understood how shapefiles store geographic boundaries and attribute information.
+- Learned how to download free shapefiles from spatial data repositories such as DIVA-GIS.
+- Explored the QGIS interface, including toolbars, layers, and browser panels.
+- Used digitizing tools in QGIS to manually create polygon shapefiles for regions without existing data.
+- Added and managed attributes such as region name and ID within shapefiles.
+- Learned how to export geographic data into SHP and KML formats.
+- Understood how KML files can be visualized in tools such as Google Earth.
+
+
+---
+
+# Network analysis in Python
+
+- Learned the fundamentals of network analysis and graph-based data modeling.
+- Represented actors as nodes and collaborations as edges in a network.
+- Used matrix multiplication to efficiently compute actor collaboration counts.
+- Learned how to convert edge lists into adjacency matrices for network analysis.
+- Applied community detection algorithms to identify clusters within networks.
+- Interpreted clusters to understand relationships within film industries.
+- Identified influential nodes that connect multiple communities.
+- Understood applications of network analysis in social, financial, and organizational systems.
+
+---
+
+# Visualizing Machine Learning
+
+- Learned about the challenges of interpreting black-box machine learning models.
+- Understood how visualization helps explain complex machine learning results.
+- Applied clustering techniques such as K-means to group similar data points.
+- Learned how to visualize clustering results using geographic maps.
+- Explored the concept of the "ladder of abstraction" to analyze data at multiple levels.
+- Understood the importance of interactive visualizations for model interpretation.
+- Learned how correlation matrices and clustering can reveal relationships in financial and economic datasets.
+- Recognized the role of visualization in communicating machine learning insights effectively to stakeholders.
+
+---

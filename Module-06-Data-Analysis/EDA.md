@@ -70,3 +70,27 @@ A computationally intensive task was performed to group flights by departure del
 
 ---
 
+# Geospatial analysis with Excel
+
+
+---
+
+# Geospatial analysis with Python
+
+
+---
+
+# Geospatial analysis with QGIS
+
+
+---
+
+# Network analysis in Python
+
+
+---
+
+# Visualizing Machine Learning
+
+
+---

@@ -72,25 +72,50 @@ A computationally intensive task was performed to group flights by departure del
 
 # Geospatial analysis with Excel
 
+This tutorial demonstrated geospatial analysis using Excel along with supporting tools such as Python, GeoPandas, and GIS mapping tools. The case study analyzed coffee shop coverage in Manhattan to understand how Starbucks and McDonald's compete geographically for customers.
+
+Coffee shop location data and population data were collected and combined with geographic boundary data. Python libraries such as GeoPandas were used to merge demographic data with map boundaries. Geographic coverage areas were then calculated to determine which coffee shop was closest to residents in different locations.
+
+The processed data was visualized using Excel 3D maps and GIS tools to create coverage maps showing population distribution and coffee shop proximity. These visualizations helped illustrate how many people live closest to each coffee shop and where the highest potential customer densities exist.
 
 ---
 
 # Geospatial analysis with Python
 
+This tutorial demonstrated geospatial analysis using Python to support decision making for opening new stores or business branches. A dataset containing the geographic coordinates (latitude and longitude) of Starbucks and McDonald’s stores in New York was used for the analysis.
+
+The first step involved preparing the dataset by combining latitude and longitude values into coordinate pairs. The Empire State Building was chosen as a reference point, and the distance of each store from this location was calculated using the geopy library. The computed distances were added as a new column to the dataset.
+
+The store locations were then visualized on an interactive map using the Folium library. Different colored markers were used to represent Starbucks and McDonald’s locations. Further analysis included identifying stores within a given radius and calculating the closest and farthest stores relative to the Empire State Building.
 
 ---
 
 # Geospatial analysis with QGIS
 
+This tutorial demonstrated how to create and manage geographic data using QGIS, a free and open-source Geographic Information System (GIS). The main focus was on creating shapefiles and exporting them into formats such as KML for geospatial analysis.
+
+Initially, existing shapefiles were downloaded from online spatial data repositories such as DIVA-GIS. These shapefiles represent geographic regions such as countries, states, districts, or cities using polygon boundaries. The shapefiles were loaded into QGIS and explored using attribute tables to understand geographic attributes like region names and administrative levels.
+
+In cases where shapefiles were unavailable, QGIS was used to manually create new shapefiles. A polygon representing South Sudan was drawn using digitizing tools, and attributes such as ID and region name were added. The created shapefile was then exported in formats such as SHP and KML for use in geospatial analysis tools like Google Earth.
 
 ---
 
 # Network analysis in Python
 
+This tutorial demonstrated network analysis using the IMDB dataset of actors and movies. In this analysis, each actor was treated as a node in a network, and a connection (edge) was created between two actors if they appeared together in a movie.
+
+The dataset contained movie identifiers, actor identifiers, and additional metadata such as movie language and actor names. The analysis first constructed a binary movie–actor matrix indicating which actors appeared in each movie. Matrix multiplication with the transpose of this matrix was used to efficiently compute how many times each pair of actors acted together.
+
+Using the scikit-network library, this actor collaboration data was converted into a network representation. Community detection algorithms such as the Louvain method were then applied to identify clusters of actors who frequently worked together in the same movies.
 
 ---
 
 # Visualizing Machine Learning
 
+This session explored the importance of visualizing machine learning models to make them understandable and interpretable. Modern machine learning models such as neural networks, support vector machines, and random forests often act as black box models, meaning their internal decision processes are difficult for users to understand.
+
+Through examples such as customer churn prediction and district clustering using census data, the tutorial demonstrated how machine learning outputs can be visualized using tools like maps, charts, and clustering visualizations. Techniques such as K-means clustering were applied to group similar districts based on demographic characteristics and then visualized geographically to reveal meaningful patterns.
+
+The tutorial emphasized moving up and down the "ladder of abstraction", where raw data is summarized into visual patterns and then explored interactively to better interpret model behavior and relationships within data.
 
 ---

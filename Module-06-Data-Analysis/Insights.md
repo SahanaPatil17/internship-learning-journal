@@ -70,25 +70,50 @@ DuckDB also demonstrated advantages in memory efficiency and flexibility. It can
 
 # Geospatial analysis with Excel
 
+The geospatial analysis revealed that Starbucks has a significantly larger presence in Manhattan, with around 230 stores compared to approximately 16 McDonald's locations. As a result, about two-thirds of Manhattan's population lives closer to a Starbucks store.
+
+However, despite having fewer locations, McDonald's stores tend to serve more customers per location. This indicates that McDonald's stores are positioned in high-density areas where a larger number of potential customers are located nearby.
+
+The analysis also showed that relocating underperforming stores could improve profitability. Strategic repositioning of stores toward areas with higher population coverage could influence the competitive balance between Starbucks and McDonald's in Manhattan.
 
 ---
 
 # Geospatial analysis with Python
 
+The geospatial visualization revealed that Starbucks has a much higher number of stores compared to McDonald’s in New York, especially in the southern part of the city. McDonald’s stores were fewer and appeared more concentrated in specific areas.
+
+Distance analysis showed that some stores are located very close to the Empire State Building, with the nearest Starbucks only a few meters away. In contrast, the farthest stores were located more than 13–14 kilometers away.
+
+Such analysis helps businesses understand market saturation and identify optimal locations for opening new stores. By analyzing store density and customer accessibility, companies can make strategic decisions to reduce travel distance for customers and improve store profitability.
 
 ---
 
 # Geospatial analysis with QGIS
 
+Geographic shapefiles are essential for geospatial analysis because they store spatial boundaries along with descriptive attributes such as region names and demographic data. These files enable analysts to visualize geographic information and perform location-based analysis.
+
+The tutorial demonstrated that when shapefiles are unavailable for certain regions, they can be created manually using QGIS digitizing tools. This ensures that missing geographic data does not prevent further analysis.
+
+Exporting shapefiles into formats such as KML enables seamless integration with mapping tools like Google Earth, allowing the created geographic boundaries to be visualized and shared easily.
 
 ---
 
 # Network analysis in Python
 
+The network clustering revealed meaningful communities of actors based on the language and film industries they primarily worked in. For example, clusters naturally formed around Hollywood actors, Bollywood actors, Telugu actors, and other regional film industries.
+
+The analysis also identified actors who frequently collaborated across clusters. These actors acted as connectors between different film communities because they worked with actors from multiple industries.
+
+Such network analysis helps identify influential individuals within networks and understand how different groups are interconnected. These insights can be applied to many domains such as social networks, collaboration networks, and organizational structures.
 
 ---
 
 # Visualizing Machine Learning
 
+Machine learning models are often highly accurate but difficult to interpret, which can prevent organizations from adopting them. Visualization techniques help bridge this gap by translating complex model outputs into understandable patterns and insights.
+
+By visualizing clustering results on maps and analyzing relationships between variables, analysts can interpret the characteristics that define each cluster and derive actionable strategies. For example, demographic clusters can guide marketing strategies, content targeting, or regional product planning.
+
+Interactive visualizations that allow users to explore model behavior and adjust parameters help stakeholders better understand how models work, improving trust and adoption of machine learning solutions.
 
 ---

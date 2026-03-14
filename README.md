@@ -27,6 +27,7 @@ Course Link: https://tds.s-anand.net/#/
 | Module 03 | LLMs, Embeddings, Vector Databases, Multimodal APIs | Completed |
 | Module 04 | Data Sourcing | Completed |
 | Module 05 | Data Preparation | Completed |
+| Module 06 | Data Analysis | Completed |
 
 ---
 
@@ -99,6 +100,8 @@ Course Link: https://tds.s-anand.net/#/
 - Function calling in LLMs for structured JSON output extraction  
 - Understanding structured schema definitions for reliable responses
 
+---
+
 ### Week 4 Highlights
 - Introduction to web scraping fundamentals  
 - Understanding HTML structure (tags, classes, IDs)  
@@ -113,6 +116,8 @@ Course Link: https://tds.s-anand.net/#/
 - Storing scraped and API data into Pandas DataFrames  
 - Data cleaning and preprocessing after scraping  
 - Understanding ethical scraping practices and rate limits  
+
+---
 
 ### Week 5 Highlights
 - Introduction to data preparation and preprocessing techniques  
@@ -135,6 +140,23 @@ Course Link: https://tds.s-anand.net/#/
 
 ---
 
+### Week 6 Highlights
+- Introduction to exploratory data analysis using Excel  
+- Understanding correlation, regression, and forecasting techniques  
+- Detecting outliers using quartiles and interquartile range (IQR)  
+- Performing data analysis using Python and Pandas  
+- Understanding database-based analytics using SQL queries  
+- Exploring modern analytical tools such as DuckDB and Parquet for efficient data processing  
+- Performing geospatial analysis using Excel and Python libraries  
+- Visualizing geographic data using mapping tools like Folium  
+- Creating and managing shapefiles using QGIS for spatial analysis  
+- Understanding social network analysis through actor collaboration networks  
+- Applying clustering techniques to detect communities in networks  
+- Learning how visualization improves machine learning interpretability  
+- Using clustering visualizations and correlation analysis to understand data relationships  
+
+---
+
 ## Weekly Update Log
 
 | Week | What I Learned |
@@ -144,6 +166,7 @@ Course Link: https://tds.s-anand.net/#/
 | Week 3 | LLM APIs, embeddings & cosine similarity, vector databases, RAG concepts, chatbot memory handling, multimodal API usage, Base64 encoding, function calling for structured outputs, and API troubleshooting techniques |
 | Week 4 | Web scraping fundamentals, HTML parsing, PDF data extraction, OpenStreetMap API usage, structured data sourcing, and data cleaning for analysis |
 | Week 5 | Data preparation techniques, Excel data cleaning, Text-to-Columns processing, VS Code based data editing, OpenRefine entity resolution, Pandas Profiling for dataset analysis, JSON API analysis with Python, image processing using Pillow, and multimedia processing with FFMPEG |
+| Week 6 | Exploratory data analysis, statistical techniques (correlation, regression, forecasting), outlier detection, database analytics with DuckDB, geospatial analysis using Python and QGIS, network analysis, and machine learning visualization techniques |
 
 ---
 

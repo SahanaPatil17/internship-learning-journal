@@ -69,3 +69,28 @@
 
 ---
 
+# Google Charts
+
+- Google Charts is a powerful tool for creating interactive web-based visualizations.
+- googleVis allows integration of Google Charts with R for data analysis workflows.
+- Sankey diagrams help visualize flows and transitions between stages.
+- Motion charts enable time-based analysis of multiple variables simultaneously.
+- Interactive features like tooltips and filters improve user engagement.
+- Dashboards can be built by combining multiple visualizations.
+- HTML customization enhances visualization detail.
+- Internet dependency is a key limitation of Google Charts.
+
+---
+
+# Google Data Studio
+
+- Google Data Studio allows creation of interactive dashboards quickly.
+- Data sources can be connected from multiple platforms like Google Sheets.
+- Understanding dimensions and metrics is essential for building reports.
+- Aggregation functions help summarize data effectively.
+- Filters enable dynamic interaction with data.
+- Charts like bar, line, treemap, and maps provide different perspectives.
+- Scorecards highlight key performance indicators.
+- Styling improves readability and presentation.
+
+---

@@ -143,3 +143,111 @@
 
 ---
 
+# Visualising Network Data with Kumu
+
+## Data Preparation
+- Extract data from IMDB datasets.
+- Filter:
+  - Only movies (exclude TV shows)
+  - Specific region (e.g., Indian movies)
+
+## Entity Mapping
+- Actors assigned unique IDs.
+- Map IDs to actor names for interpretation.
+
+## Matrix Construction
+- Create Movie × Actor matrix:
+  - 1 → Actor in movie
+  - 0 → Actor not in movie
+
+## Co-occurrence Matrix
+- Multiply matrix with its transpose.
+- Result:
+  - Diagonal → total movies per actor
+  - Off-diagonal → shared movies between actors
+
+## Sparse Matrix Optimization
+- Use Compressed Sparse Row (CSR) format.
+- Stores only non-zero values.
+- Improves performance and memory efficiency.
+
+## Data Formatting for Kumu
+- Convert matrix into edge list:
+  - From (Actor A)
+  - To (Actor B)
+  - Weight (number of collaborations)
+
+## Filtering
+- Minimum number of movies per actor
+- Minimum collaborations between actor pairs
+
+## Visualization in Kumu
+- Upload dataset to create network graph.
+- Features:
+  - Node highlighting
+  - Zoom and filtering
+  - Cluster exploration
+
+## Dashboard Insights
+- Identify highly connected actors.
+- Detect communities and clusters.
+- Analyze relationship paths between entities.
+
+---
+
+# Data Visualisation with Seaborn
+
+## Setup
+- Libraries:
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+
+## Data Handling
+- Load datasets using:
+  - pandas (CSV, etc.)
+  - seaborn built-in datasets
+
+## Visualization Categories
+
+### Distribution Analysis
+- distplot → histogram + KDE
+- kdeplot → smooth distribution
+- jointplot → relationship between variables
+- pairplot → multi-variable relationships
+
+### Categorical Analysis
+- barplot → aggregated statistics
+- countplot → frequency
+- boxplot → spread and outliers
+- violinplot → density + distribution
+- stripplot/swarmplot → individual data points
+
+### Matrix Visualization
+- heatmap → correlation/pattern detection
+- pivot tables for structured data
+- clustermap → hierarchical clustering
+
+### Grid Systems
+- PairGrid → custom multi-plot layout
+- FacetGrid → split data across rows/columns
+
+### Regression Analysis
+- lmplot → regression relationships
+- Supports grouping (hue, row, column)
+
+## Styling & Customization
+- set_style → grid/background styles
+- set_context → scaling (paper, talk, poster)
+- palettes → color themes
+- despine → remove axes lines
+- figure size adjustments
+
+## Dashboard Insights
+- Identify distributions and trends.
+- Compare categories effectively.
+- Detect correlations and clusters.
+- Create visually appealing analytical dashboards.
+
+---

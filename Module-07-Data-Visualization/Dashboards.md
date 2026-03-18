@@ -251,3 +251,116 @@
 - Create visually appealing analytical dashboards.
 
 ---
+
+# Google Charts
+
+## Tools & Integration
+- Google Charts (JavaScript library)
+- googleVis (R interface to Google Charts)
+- Supports:
+  - R Markdown
+  - Shiny apps
+  - Web dashboards
+
+## Data Workflow
+- Data processing in R or backend
+- Visualization using Google Charts API
+- Integration into web applications
+
+## Dashboard Features
+
+### Interactivity
+- Mouse hover tooltips
+- Dynamic filtering
+- Zoom and scale adjustments
+
+### Chart Customization
+- Multiple chart types for same data
+- HTML-based tooltips
+- Color and size encoding
+
+### Dashboard Composition
+- Combine multiple charts using merge functions
+- Create full dashboards with multiple visualizations
+
+### Motion Charts
+- Time slider for dynamic data
+- Adjustable axes and scales
+- Bubble size and color encoding
+
+### Sankey Diagrams
+- Visualize flows between nodes
+- Useful for journey or transition analysis
+
+## Limitations
+- Requires internet connection
+- Not ideal for print-based reports
+- Dependency on external APIs
+
+## Dashboard Insights
+- Enables real-time, interactive dashboards.
+- Useful for storytelling and exploration.
+- Helps users interact directly with data.
+
+---
+
+# Google Data Studio
+
+## Data Setup
+- Use Google Sheets or other connectors.
+- Clean dataset requirements:
+  - One row per record
+  - No merged cells
+  - Consistent data types
+  - Headers in first row
+
+## Core Concepts
+
+### Dimensions vs Metrics
+- Dimensions → categorical data (name, date, country)
+- Metrics → numerical data (salary, count)
+
+### Aggregation Functions
+- SUM, AVG, MEDIAN, MIN, MAX, COUNT
+
+## Dashboard Features
+
+### Tables
+- Custom columns and sorting
+- Aggregation tables for statistics
+- Heatmap tables for comparisons
+
+### Filters
+- Date range filter (global)
+- Dropdown filters (country, recruiter)
+- Table-level filters
+- Page-level filters
+
+### Interactivity
+- Filters update all charts dynamically
+- Drill-down options in charts
+- Clickable elements for filtering
+
+### Charts
+- Bar charts → daily trends
+- Line charts → overall trends
+- Treemaps → category distribution
+- Geo maps → geographic insights
+
+### Scorecards
+- Display KPIs
+- Compare with previous periods
+- Show percentage or absolute change
+
+### Styling
+- Themes and layouts
+- Font and color customization
+- Alignment and spacing
+- Dashboard sections using shapes
+
+## Dashboard Insights
+- Enables real-time data exploration.
+- Combines multiple data views in one place.
+- Supports interactive and user-friendly reporting.
+
+---

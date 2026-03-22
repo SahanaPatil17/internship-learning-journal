@@ -253,3 +253,63 @@
 
 ---
 
+# Actor Network Visualization
+
+- Actor networks represented as graphs
+- Nodes = actors, edges = collaborations
+- Visualizes connections and paths
+- Useful for understanding relationships in datasets
+
+Supports analysis of “degrees of separation”.
+
+---
+
+# RAWGraphs
+
+- Supports complex charts (scatter, network, etc.)
+- Built on D3.js
+- Maps dataset dimensions to visual variables
+- Exports as vector or raster images
+
+Useful for quick and flexible visualization.
+
+---
+
+# Data Storytelling
+
+- Charts communicate trends and insights visually
+- Help users quickly understand patterns
+- Can replace long textual explanations
+
+---
+
+# Interactive Notebooks : Marimo
+
+- Visualizations update automatically when input variables change
+- Supports interactive elements like sliders and UI controls
+- Enables dynamic plots (e.g., sine wave reacting to parameter changes)
+- Integrates charts with real-time data exploration
+
+Helps create interactive and responsive data visualizations.
+
+---
+
+# Narratives with Excel
+
+- Uses charts (histograms/line charts) to show trends over time
+- Trendlines (linear regression) help identify direction of data
+- Dynamic charts update automatically with filter changes
+- Chart titles can be linked to cells for dynamic storytelling
+
+Charts act as the visual backbone of automated narratives.
+
+---
+
+# Narratives with Comics
+
+- Uses comic-style visuals instead of traditional charts
+- Speech bubbles represent insights from data
+- Characters + expressions visually reflect data trends (e.g., happy for high returns, sad for low)
+- Dynamic visuals created using image URLs in Google Sheets
+
+Comics act as an alternative visualization method for storytelling.

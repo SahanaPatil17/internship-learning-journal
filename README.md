@@ -28,7 +28,7 @@ Course Link: https://tds.s-anand.net/#/
 | Module 04 | Data Sourcing | Completed |
 | Module 05 | Data Preparation | Completed |
 | Module 06 | Data Analysis | Completed |
-| Module 07 | Data Visualisation | In Progress |
+| Module 07 | Data Visualisation | Completed |
 
 ---
 
@@ -158,6 +158,17 @@ Course Link: https://tds.s-anand.net/#/
 
 ---
 
+### Week 7 Highlights
+- Advanced data visualization using RAWGraphs for complex datasets  
+- Mapping dataset dimensions to visual variables for better insights  
+- Understanding data storytelling using numbers, charts, text, and illustrations  
+- Creating comic-based narratives using Google Sheets and Comicgen  
+- Building structured data narratives using Excel  
+- Introduction to reactive notebooks (marimo) for dynamic workflows  
+- Combining analytics with storytelling for impactful communication
+
+---
+
 ## Weekly Update Log
 
 | Week | What I Learned |
@@ -168,6 +179,7 @@ Course Link: https://tds.s-anand.net/#/
 | Week 4 | Web scraping fundamentals, HTML parsing, PDF data extraction, OpenStreetMap API usage, structured data sourcing, and data cleaning for analysis |
 | Week 5 | Data preparation techniques, Excel data cleaning, Text-to-Columns processing, VS Code based data editing, OpenRefine entity resolution, Pandas Profiling for dataset analysis, JSON API analysis with Python, image processing using Pillow, and multimedia processing with FFMPEG |
 | Week 6 | Exploratory data analysis, statistical techniques (correlation, regression, forecasting), outlier detection, database analytics with DuckDB, geospatial analysis using Python and QGIS, network analysis, and machine learning visualization techniques |
+| Week 7 | Advanced data visualization using RAWGraphs, data storytelling techniques, comic-based narratives with Google Sheets, Excel-based data narratives, and reactive notebook workflows using marimo |
 
 ---
 

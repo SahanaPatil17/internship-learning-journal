@@ -94,3 +94,62 @@
 - Styling improves readability and presentation.
 
 ---
+
+# Actor Network Visualization
+
+- Learned to use NetworkX and scikit-network
+- Built actor collaboration networks
+- Applied shortest path algorithms
+- Handled large datasets and inconsistencies
+
+---
+
+# RAWGraphs
+
+- Learned open-source visualization tool usage
+- Understood mapping of data dimensions to visuals
+- Explored customization and export options
+
+---
+
+# Data Storytelling
+
+- Learned different storytelling methods:
+  - Numbers
+  - Charts
+  - Text
+  - Illustrations
+- Combining methods improves communication
+- Storytelling makes data impactful and memorable
+
+---
+
+# Interactive Notebooks : Marimo
+
+- Learned about reactive execution in notebooks
+- Solves hidden state issues in traditional Jupyter notebooks
+- Uses DAG (Directed Acyclic Graph) for dependency tracking
+- Ensures reproducibility and consistency of outputs
+- Notebooks stored as pure Python files (better for version control)
+- Can run as scripts or interactive apps
+
+---
+
+# Narratives with Excel
+
+- Learned to generate automated narratives using Excel formulas
+- Used VLOOKUP to create reference tables from pivot data
+- Calculated slope to determine trend direction
+- Applied conditional logic to map trends to descriptive text
+- Combined text + data + charts to create dynamic storytelling
+
+---
+
+# Narratives with Comics 
+
+- Learned to use Comicgen for creating visual characters and scenes
+- Integrated Google Sheets with dynamic image generation
+- Used IF-ELSE logic to map data clusters to narratives
+- Converted numerical insights into human-readable stories
+- Applied URL encoding for dynamic text in images
+- Made storytelling interactive and engaging using visuals

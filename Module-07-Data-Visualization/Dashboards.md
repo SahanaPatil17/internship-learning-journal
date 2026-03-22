@@ -364,3 +364,64 @@
 - Supports interactive and user-friendly reporting.
 
 ---
+
+# Actor Network Visualization
+
+- Show actor connections and shortest paths
+- Highlight key nodes and bridges
+- Allow exploration of collaboration networks
+
+Useful for storytelling with graph data.
+
+---
+
+# RAWGraphs
+
+- Import data directly from spreadsheets
+- Choose chart type and map variables
+- Customize visuals before exporting
+- Can integrate with design tools
+
+Best for exploratory visualization.
+
+---
+
+# Data Storytelling
+
+- Combine charts, text, numbers, and visuals
+- Use multiple formats for better understanding
+- Focus on clarity and engagement
+
+---
+
+# Interactive Notebooks : Marimo
+
+- Notebooks can be converted into interactive web apps
+- Users can interact with sliders, filters, and charts
+- Supports real-time updates without re-running cells manually
+- Can be shared as read-only web applications
+
+Bridges the gap between notebooks and dashboards.
+
+---
+
+# Narratives with Excel
+
+- Pivot tables used as data sources
+- Filters (e.g., country selection) update entire dashboard
+- Reference tables created using formulas (VLOOKUP)
+- Narratives update automatically based on selected data
+
+Enables creation of interactive and auto-updating storytelling dashboards.
+
+---
+
+# Narratives with Comics 
+
+- Google Sheets used as backend for dynamic storytelling
+- Comicgen generates characters and speech bubbles
+- IMAGE() function used to embed visuals dynamically
+- IF conditions and mappings control text, emotions, and visuals
+- Entire comic updates based on selected data (e.g., cluster)
+
+Transforms dashboards into engaging, story-driven interfaces.
